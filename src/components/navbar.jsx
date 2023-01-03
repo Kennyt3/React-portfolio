@@ -46,16 +46,16 @@ const Navbar = () => {
         />
       </div>
       <ul className='hidden xmd:flex pl-8  gap-x-10'>
-        <li className=' text-2xl p-4 font-bold leading-9'>
+        <li className=' text-2xl p-4 font-medium leading-9'>
           <NavLink to='/'>Home</NavLink>
         </li>
-        <li className=' text-2xl p-4 font-bold leading-9'>
+        <li className=' text-2xl p-4 font-medium leading-9'>
           <NavLink to='/about'>About</NavLink>
         </li>
-        <li className=' text-2xl p-4 font-bold leading-9'>
+        <li className=' text-2xl p-4 font-medium leading-9'>
           <NavLink to='/projects'>Projects</NavLink>
         </li>
-        <li className=' text-2xl p-4 font-bold leading-9'>
+        <li className=' text-2xl p-4 font-medium leading-9'>
           <NavLink to='/contact'>Contact</NavLink>
         </li>
       </ul>
@@ -83,16 +83,16 @@ const Navbar = () => {
             onClick={closeMenubar}
           />
           <ul className='flex  flex-col  '>
-            <li className=' text-2xl p-4 font-bold leading-9'>
+            <li className=' text-2xl p-4 font-medium leading-9'>
               <NavLink to='/'>Home</NavLink>
             </li>
-            <li className=' text-2xl p-4 font-bold leading-9'>
+            <li className=' text-2xl p-4 font-medium leading-9'>
               <NavLink to='/about'>About</NavLink>
             </li>
-            <li className=' text-2xl p-4 font-bold leading-9'>
+            <li className=' text-2xl p-4 font-medium leading-9'>
               <NavLink to='/projects'>Projects</NavLink>
             </li>
-            <li className=' text-2xl p-4 font-bold leading-9'>
+            <li className=' text-2xl p-4 font-medium leading-9'>
               <NavLink to='/contact'>Contact</NavLink>
             </li>
           </ul>

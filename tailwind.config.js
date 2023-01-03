@@ -49,6 +49,7 @@ module.exports = {
       },
       height: {
         25: '100px',
+        '75vh': '75vh',
       },
       borderRadius: {
         '2.5xl': '20px',
