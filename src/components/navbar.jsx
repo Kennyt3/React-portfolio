@@ -1,32 +1,26 @@
 import { NavLink } from 'react-router-dom'
+
 import '../index.css'
 
-import { FaAlignJustify, FaTimes } from 'react-icons/fa'
+import { FaAlignJustify } from 'react-icons/fa'
 import { BsLightningCharge } from 'react-icons/bs'
 import { useProvider } from './context'
+import Dropdown from './dropdown'
+import Links from './links'
 
 const Navbar = () => {
-  const {
-    openMenubar,
-    closeMenubar,
-    isMenuOpen,
-    openLightmode,
-    lightmode,
-    closeLightmode,
-  } = useProvider()
+  const { openMenubar, isMenuOpen, openLightmode, lightmode, closeLightmode } =
+    useProvider()
 
   return (
     <div className={`flex h-25 py-5 items-center   justify-between`}>
       <div className='flex items-center   gap-x-1 px-2'>
         <p
-          className='h-10 flex w-10 text-xl rounded-2.5xl bg-primary900 justify-center items-center  font-bold '
-          style={{
-            color: lightmode ? 'rgb(183, 92,255) ' : 'rgb(245, 245, 220)',
-
-            backgroundColor: lightmode
-              ? 'rgb(245, 245, 220)'
-              : 'rgb(183, 92, 255) ',
-          }}
+          className={`h-10 flex w-10 text-xl rounded-2.5xl ${
+            lightmode ? 'text-primary800' : 'text-primary900'
+          } ${
+            lightmode ? 'bg-primary900' : 'bg-primary800'
+          } justify-center items-center  font-bold `}
         >
           K
         </p>
@@ -45,20 +39,7 @@ const Navbar = () => {
           onClick={lightmode ? closeLightmode : openLightmode}
         />
       </div>
-      <ul className='hidden xmd:flex pl-8  gap-x-10'>
-        <li className=' text-2xl p-4 font-medium leading-9'>
-          <NavLink to='/'>Home</NavLink>
-        </li>
-        <li className=' text-2xl p-4 font-medium leading-9'>
-          <NavLink to='/about'>About</NavLink>
-        </li>
-        <li className=' text-2xl p-4 font-medium leading-9'>
-          <NavLink to='/projects'>Projects</NavLink>
-        </li>
-        <li className=' text-2xl p-4 font-medium leading-9'>
-          <NavLink to='/contact'>Contact</NavLink>
-        </li>
-      </ul>
+      <Links />
 
       <FaAlignJustify
         size={30}
@@ -66,38 +47,7 @@ const Navbar = () => {
         className='block xmd:hidden'
       />
 
-      {isMenuOpen && (
-        <div
-          className={`flex 
-         
-           flex-col items-center justify-center absolute h-screen  z-10 w-full top-0 left-0`}
-          style={{
-            backgroundColor: lightmode
-              ? 'rgb(40, 44, 52)'
-              : 'rgb(255, 255, 255)',
-          }}
-        >
-          <FaTimes
-            size={30}
-            className='absolute z-7 top-7 right-5'
-            onClick={closeMenubar}
-          />
-          <ul className='flex  flex-col  '>
-            <li className=' text-2xl p-4 font-medium leading-9'>
-              <NavLink to='/'>Home</NavLink>
-            </li>
-            <li className=' text-2xl p-4 font-medium leading-9'>
-              <NavLink to='/about'>About</NavLink>
-            </li>
-            <li className=' text-2xl p-4 font-medium leading-9'>
-              <NavLink to='/projects'>Projects</NavLink>
-            </li>
-            <li className=' text-2xl p-4 font-medium leading-9'>
-              <NavLink to='/contact'>Contact</NavLink>
-            </li>
-          </ul>
-        </div>
-      )}
+      {isMenuOpen && <Dropdown />}
     </div>
   )
 }

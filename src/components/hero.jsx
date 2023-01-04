@@ -2,11 +2,13 @@ import React from 'react'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useProvider } from './context'
-
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Socials from './socials'
+// import Typical from 'react-typical'
+import Typewriter from 'typewriter-effect'
 
-const Frontpage = () => {
+const Hero = () => {
   const { lightmode } = useProvider()
   useEffect(() => {
     AOS.init()
@@ -14,11 +16,8 @@ const Frontpage = () => {
   }, [])
   return (
     <div className='max-w-5xl mx-auto px-5 flex  h-75vh items-center justify-between'>
-      <div className='flex m-auto items-center h-full w-full  justify-center text-center'>
-        {/* <div className='mx-auto'> */}
-        {/* <p className='text-base leading-7 font-light text-primary500'></p> */}
-        {/* <h1 className='text-4xl font-semibold'>Hi, I'm Mercy</h1> */}
-        <div className=''>
+      <div className='flex flex-col  sm:gap-0 sm:flex-row m-auto items-center h-full w-full justify-center sm:justify-between p-5 text-center'>
+        <div className=' max-w-md'>
           <motion.div
             className='name'
             initial={{
@@ -29,14 +28,14 @@ const Frontpage = () => {
             }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className={`py-2 text-2xl    sys sm:text-5xl font-bold`}>
+            <h1 className={`py-2 ll:2xl text-3xl    sys sm:text-5xl font-bold`}>
               Hi, I'm Mercy Taiwo
             </h1>
           </motion.div>
           <motion.div
             className='name'
             initial={{
-              x: 100,
+              x: -100,
             }}
             animate={{
               x: 0,
@@ -44,18 +43,28 @@ const Frontpage = () => {
             transition={{ duration: 0.5 }}
           >
             <p
-              className={`py-2 sys text-xl ${
-                !lightmode && 'text-black'
-              } text-primary500 font-bold`}
+              className={`py-2 sys ll:text-xl text-2xl  ${
+                lightmode ? 'text-primary500' : 'text-primary600'
+              } font-bold`}
             >
               Frontend (React) Developer
             </p>
           </motion.div>
+          <Typewriter
+            options={{
+              strings: [
+                'I am a software developer passionate about providing functional software solutions',
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </div>
-        <div></div>
+
+        <Socials />
       </div>
     </div>
   )
 }
 
-export default Frontpage
+export default Hero

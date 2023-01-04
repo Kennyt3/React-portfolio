@@ -1,3 +1,4 @@
+const { transform } = require('framer-motion')
 const { BsTranslate } = require('react-icons/bs')
 
 /** @type {import('tailwindcss').Config} */
@@ -14,6 +15,7 @@ module.exports = {
         primary300: 'rgb(204, 213, 243)',
         primary400: 'rgb(24, 185, 207)',
         primary500: '#f5f5dc',
+        primary600: 'rgb(40, 44, 52)',
       },
       keyframes: {
         dropdown: {
@@ -29,13 +31,11 @@ module.exports = {
         },
         goup: {
           '0%': {
-            opacity: 1,
             transform: 'translateY(0)',
           },
 
           '100%': {
-            opacity: 0,
-            transform: 'translateY(-100px)',
+            transform: 'translateY(-600px)',
           },
         },
       },
@@ -45,8 +45,9 @@ module.exports = {
 
       animation: {
         dropdown: 'dropdown 0.5s ease-in-out',
-        goup: 'goup 0.5s ease-in-out',
+        goup: 'goup 4.5s ease-in-out',
       },
+
       height: {
         25: '100px',
         '75vh': '75vh',
@@ -56,6 +57,10 @@ module.exports = {
       },
       screens: {
         xmd: '940px',
+        ll: '400px',
+      },
+      maxWidth: {
+        ll: '70px',
       },
     },
   },
