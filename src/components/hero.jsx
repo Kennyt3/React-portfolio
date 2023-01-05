@@ -30,7 +30,7 @@ const Hero = () => {
           >
             <h1 className={`py-2 ll:2xl text-3xl    sys sm:text-5xl font-bold`}>
               Hi, I'm Mercy
-              <span className='hidden sm:inline'>Taiwo</span>
+              <span className='hidden sm:inline'> Taiwo</span>
             </h1>
           </motion.div>
           <motion.div

@@ -16,7 +16,7 @@ module.exports = {
         primary300: 'rgb(204, 213, 243)',
         primary400: 'rgb(24, 185, 207)',
         primary500: '#f5f5dc',
-        primary900: 'rgb(204 213 243)',
+        primary500: 'rgb(204 213 243)',
         primary600: 'rgb(40, 44, 52)',
       },
       keyframes: {
