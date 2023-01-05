@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import { useProvider } from './context'
 const Socials = () => {

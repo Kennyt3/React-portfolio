@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar'
+import Snowfall from 'react-snowfall'
 
 import { useProvider } from '../components/context'
 import Loading from '../components/loading'
@@ -16,6 +17,7 @@ const Home = () => {
             lightmode ? 'bg-primary600' : 'bg-white'
           }`}
         >
+          <Snowfall snowflakeCount={200} speed={[0, 0.5]} wind={[-0.5, 1]} />
           <div className='max-w-7xl mx-auto px-3'>
             <div>
               <Navbar />

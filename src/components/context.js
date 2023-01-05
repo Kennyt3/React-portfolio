@@ -6,7 +6,7 @@ const AppProvider = ({ children }) => {
   const [lightmode, setLightMode] = useState(true)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [loading, setLoading] = useState(true)
-
+  const [goup, setGoup] = useState(false)
   const openLightmode = () => {
     setLightMode(true)
   }
@@ -15,11 +15,13 @@ const AppProvider = ({ children }) => {
   }
   const openMenubar = () => {
     setIsMenuOpen(true)
+    setGoup(true)
+    setGoup(false)
   }
   const closeMenubar = () => {
     setIsMenuOpen(false)
   }
-
+  console.log(goup)
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
@@ -35,6 +37,7 @@ const AppProvider = ({ children }) => {
         openLightmode,
         closeLightmode,
         loading,
+        goup,
       }}
     >
       {children}
