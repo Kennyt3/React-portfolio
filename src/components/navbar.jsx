@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className='flex items-center   gap-x-1 px-2'>
         <p
           className={`h-10 flex w-10 text-xl rounded-2.5xl ${
-            lightmode ? 'text-primary800' : 'text-primary900'
+            lightmode ? 'text-primary800' : 'text-primary600'
           } ${
             lightmode ? 'bg-primary900' : 'bg-primary800'
           } justify-center items-center  font-bold `}
