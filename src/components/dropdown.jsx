@@ -19,16 +19,24 @@ const Dropdown = () => {
         />
         <ul className='flex  flex-col  '>
           <li className=' text-2xl p-4 font-medium leading-9'>
-            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/' onClick={closeMenubar}>
+              Home
+            </NavLink>
           </li>
           <li className=' text-2xl p-4 font-medium leading-9'>
-            <NavLink to='/about'>About</NavLink>
+            <NavLink to='/about' onClick={closeMenubar}>
+              About
+            </NavLink>
           </li>
           <li className=' text-2xl p-4 font-medium leading-9'>
-            <NavLink to='/projects'>Projects</NavLink>
+            <NavLink to='/projects' onClick={closeMenubar}>
+              Projects
+            </NavLink>
           </li>
           <li className=' text-2xl p-4 font-medium leading-9'>
-            <NavLink to='/contact'>Contact</NavLink>
+            <NavLink to='/contact' onClick={closeMenubar}>
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>
