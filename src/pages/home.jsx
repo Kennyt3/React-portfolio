@@ -19,8 +19,8 @@ const Home = () => {
           }`}
         >
           <Snowfall
-            className='text-primary800'
-            snowflakeCount={200}
+            radius={[0.5, 1.5]}
+            snowflakeCount={100}
             speed={[0, 0.5]}
             wind={[-0.5, 1]}
           />
