@@ -10,6 +10,7 @@ module.exports = {
         primary800: 'rgb(8 145 178)',
         primary800: 'rgb(183,92,255)',
         primary900: 'rgb(245 245 220)',
+        primary900: 'rgb(204 213 243)',
         primary100: '#282c34',
         primary200: 'rgb(178, 185, 207)',
         primary300: 'rgb(204, 213, 243)',
