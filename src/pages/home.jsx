@@ -23,7 +23,6 @@ const Home = () => {
             snowflakeCount={200}
             speed={[0, 0.5]}
             wind={[-0.5, 1]}
-            color={!lightmode ? 'rgb(183, 92, 255)' : 'rgb(245, 245, 220)'}
           />
           <div className='max-w-7xl mx-auto px-3'>
             <div>
