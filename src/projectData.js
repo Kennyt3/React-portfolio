@@ -12,6 +12,7 @@ export const projectData = [
       'A web quiz application built using Reactjs, tailwindcss, and quiz api',
     live: 'https://quizzardapp.netlify.app/',
     github: 'https://github.com/Kennyt3/Quizzard',
+    aos: 'fade-up-left',
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ export const projectData = [
       'A random joke telling web app built using Reactjs tailwindcss, web speech api, official jokes api',
     live: 'https://jokesbot.netlify.app/',
     github: 'https://github.com/Kennyt3/jokesbot',
+    aos: 'fade-up-right',
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ export const projectData = [
       'A review web application, to submit reviews on services built using Reactjs aand styled components',
     live: 'https://teamkernel.netlify.app/',
     github: 'https://github.com/Kennyt3/TeamKernel',
+    aos: 'fade-down-left',
   },
   {
     id: 4,
@@ -39,5 +42,6 @@ export const projectData = [
       'A To-do web application for creating to do lists, built using Html, CSS and Javascript',
     live: 'https://mercystodo.netlify.app/',
     github: 'https://github.com/Kennyt3/Icecream',
+    aos: 'fade-down-right',
   },
 ]

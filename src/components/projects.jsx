@@ -1,14 +1,22 @@
 import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import { projectData } from '../projectData'
 import { useProvider } from './context'
 
 const Project = () => {
   const { lightmode } = useProvider()
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
   return (
     <div className='max-w-5xl mx-auto mt-10 grid sm:grid-cols-2 gap-8'>
-      {projectData.map(({ id, name, pic, details, live, github }) => {
+      {projectData.map(({ id, name, pic, details, live, github, aos }) => {
         return (
           <div
+            data-aos={aos}
             key={id}
             className={`mb-5 border-2 w-full sm:w-proj pb-5 pt-2 px-2 rounded-2xl  ${
               lightmode ? 'border-primary500' : 'border-transparent'
