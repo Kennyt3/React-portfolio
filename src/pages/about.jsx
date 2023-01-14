@@ -9,7 +9,7 @@ const About = () => {
     <>
       <div
         id='about'
-        className={`text-primary800 h-fit pb-5 ${
+        className={`text-primary800 h-fit py-5  ${
           lightmode ? 'bg-primary600' : 'bg-white'
         }`}
       >
@@ -19,7 +19,7 @@ const About = () => {
           speed={[0, 0.5]}
           wind={[-0.5, 1]}
         />
-        <div className='max-w-7xl mx-auto px-3 pb-5'>
+        <div className='max-w-7xl mx-auto px-3  pb-5'>
           <div>
             <Navbar />
             <div className='max-w-5xl mx-auto'>

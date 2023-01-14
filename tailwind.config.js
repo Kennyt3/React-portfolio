@@ -65,6 +65,7 @@ module.exports = {
       screens: {
         xmd: '940px',
         ll: '400px',
+        plan: '850px',
       },
       maxWidth: {
         ll: '70px',

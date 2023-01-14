@@ -9,7 +9,7 @@ const Projects = () => {
     <>
       <div
         id='projects'
-        className={`h-fit pb-5 text-primary800 ${
+        className={`h-fit w-full pb-5 text-primary800 ${
           lightmode ? 'bg-primary600' : 'bg-white'
         }`}
       >
@@ -19,12 +19,14 @@ const Projects = () => {
           speed={[0, 0.5]}
           wind={[-0.5, 1]}
         />
-        <div className='max-w-7xl mx-auto px-3'>
-          <Navbar />
-          <h1 className='text-center font-bold text-4xl mt-20 mb-16'>
-            My projects
-          </h1>
-          <Project />
+        <div className='plan:max-w-7xl mx-auto px-3'>
+          <div>
+            <Navbar />
+            <h1 className='text-center font-bold text-4xl mt-20 mb-16'>
+              My projects
+            </h1>
+            <Project />
+          </div>
         </div>
       </div>
     </>
