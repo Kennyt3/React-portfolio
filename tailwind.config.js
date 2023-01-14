@@ -49,11 +49,16 @@ module.exports = {
         dropdown: 'dropdown 0.5s ease-in-out',
         goup: 'goup 4.5s ease-in-out',
       },
+      width: {
+        proj: '400px',
+      },
 
       height: {
         25: '100px',
         '75vh': '75vh',
       },
+      borderColor: {},
+
       borderRadius: {
         '2.5xl': '20px',
       },

@@ -26,7 +26,7 @@ const About = () => {
               <h1 className='mt-5 sm:mt-10 ml-5 text-2xl font-semibold'>
                 About Me
               </h1>
-              <div className=' mx-5  flex flex-col sm:flex-row'>
+              <div className=' mx-5  flex flex-col xmd:flex-row'>
                 <Me />
                 <div className='mt-5  basis-1/2 sm:flex items-center'>
                   <img
