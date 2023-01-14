@@ -19,7 +19,7 @@ const About = () => {
           speed={[0, 0.5]}
           wind={[-0.5, 1]}
         />
-        <div className='max-w-7xl mx-auto px-3 py-5'>
+        <div className='max-w-7xl mx-auto px-3 pb-5'>
           <div>
             <Navbar />
             <div className='max-w-5xl mx-auto'>
