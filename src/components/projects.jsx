@@ -12,13 +12,13 @@ const Project = () => {
     AOS.refresh()
   }, [])
   return (
-    <div className='max-w-sm plan:max-w-5xl  mx-auto mt-10 grid plan:grid-cols-2 gap-8'>
+    <div className='max-w-sm plan:max-w-5xl overflow-x-hidden  mx-auto mt-10 grid plan:grid-cols-2 gap-8'>
       {projectData.map(({ id, name, pic, details, live, github, aos }) => {
         return (
           <div
-            // data-aos={aos}
+            data-aos={aos}
             key={id}
-            className={`mb-5 border-2 w-full plan:w-proj pb-5 pt-2 px-2 rounded-2xl ${
+            className={`mb-5 border-2  w-full plan:w-proj pb-5 pt-2 px-2 rounded-2xl ${
               lightmode ? 'border-primary500' : 'border-transparent'
             } 
                ${!lightmode && 'bg-primary500'} `}
