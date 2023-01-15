@@ -19,14 +19,24 @@ const Hero = () => {
       <div className='flex flex-col  sm:gap-0 sm:flex-row m-auto items-center h-full w-full justify-center sm:justify-between p-5 text-center'>
         <div className=' max-w-md'>
           <motion.div
-            className='name'
             initial={{
-              x: 100,
+              x: 200,
+              scale: 0.5,
             }}
             animate={{
               x: 0,
+              scale: 1,
             }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 2 }}
+            // initial={{
+            //   x: -300,
+            //   scale: 0.5,
+            // }}
+            // animate={{
+            //   x: 0,
+            //   scale: 1,
+            // }}
+            // transition={{ duration: 2 }}
           >
             <h1 className={`py-2 ll:2xl text-3xl    sys sm:text-5xl font-bold`}>
               Hi, I'm Mercy
@@ -36,12 +46,14 @@ const Hero = () => {
           <motion.div
             className='name'
             initial={{
-              x: -100,
+              x: -200,
+              scale: 0.5,
             }}
             animate={{
               x: 0,
+              scale: 1,
             }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 2 }}
           >
             <p
               className={`py-2 sys ll:text-xl text-2xl  ${
