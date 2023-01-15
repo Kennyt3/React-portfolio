@@ -1,6 +1,7 @@
 import { useProvider } from '../components/context'
 import Navbar from '../components/navbar'
 import Snowfall from 'react-snowfall'
+import Cform from '../components/cform'
 
 const Contact = () => {
   const { lightmode } = useProvider()
@@ -8,7 +9,7 @@ const Contact = () => {
     <>
       <div
         id='about'
-        className={`h-screen text-primary800 ${
+        className={`h-fit pb-20 text-primary800 ${
           lightmode ? 'bg-primary600' : 'bg-white'
         }`}
       >
@@ -21,6 +22,24 @@ const Contact = () => {
 
         <div className='max-w-7xl mx-auto px-3'>
           <Navbar />
+          <div className='max-w-5xl mx-auto mt-24'>
+            <h2
+              className={`${
+                lightmode ? 'text-primary800' : 'text-primary600'
+              } text-3xl mt-20 text-center font-bold`}
+            >
+              Would you like to reach out?
+            </h2>
+            <p
+              className={`${
+                lightmode ? 'text-primary500' : 'text-primary800'
+              } text-center text-xl mt-10 mb-20`}
+            >
+              Send me an email if you think we're a great fit and would like to
+              work with me.
+            </p>
+            <Cform />
+          </div>
         </div>
       </div>
     </>

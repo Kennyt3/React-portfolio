@@ -15,9 +15,11 @@ module.exports = {
         primary200: 'rgb(178, 185, 207)',
         primary300: 'rgb(204, 213, 243)',
         primary400: 'rgb(24, 185, 207)',
-        primary500: '#f5f5dc',
+
         primary500: 'rgb(204 213 243)',
         primary600: 'rgb(40, 44, 52)',
+        primary10: 'white',
+        primary20: 'rgb(183,92,255)',
       },
       keyframes: {
         dropdown: {
