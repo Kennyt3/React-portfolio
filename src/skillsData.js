@@ -5,6 +5,8 @@ import React from './assets/react.svg'
 import Tailwind from './assets/tailwind.svg'
 import Javascript from './assets/javascript.svg'
 import Vscode from './assets/vscode.svg'
+import Typescript from './assets/Typescript.svg'
+import Next from './assets/Next.webp'
 
 export const skillsData = [
   {
@@ -33,18 +35,30 @@ export const skillsData = [
   },
   {
     id: 5,
+    icon: Typescript,
+    name: 'Typescript',
+    aos: 'fade-up-left',
+  },
+  {
+    id: 6,
     icon: Tailwind,
     name: 'Tailwind',
     aos: 'fade-down',
   },
   {
-    id: 6,
+    id: 7,
+    icon: Next,
+    name: 'Next',
+    aos: 'fade-down',
+  },
+  {
+    id: 8,
     icon: Git,
     name: 'Git',
     aos: 'fade-up-right',
   },
   {
-    id: 7,
+    id: 9,
     icon: Vscode,
     name: 'Vscode',
     aos: 'fade-down-left',

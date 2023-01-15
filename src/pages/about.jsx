@@ -19,7 +19,7 @@ const About = () => {
     <>
       <div
         id='about'
-        className={`text-primary800 h-fit py-5  ${
+        className={`text-primary800 h-fit  ${
           lightmode ? 'bg-primary600' : 'bg-white'
         }`}
       >
@@ -32,7 +32,7 @@ const About = () => {
         <div className='max-w-7xl  mx-auto px-3  pb-5'>
           <div>
             <Navbar />
-            <div className='max-w-5xl mx-auto'>
+            <div className='max-w-5xl mt-20 mx-auto'>
               <motion.div
                 initial={{
                   x: 150,
