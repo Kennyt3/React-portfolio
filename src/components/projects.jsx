@@ -46,6 +46,8 @@ const Project = () => {
               <div className='flex gap-5 mt-10 mb-5 items-center justify-center'>
                 <a
                   href={live}
+                  target='_blank'
+                  rel='noreferrer'
                   className={`${
                     lightmode ? 'bg-primary500' : 'bg-primary800'
                   } font-bold p-5 ${
@@ -56,6 +58,8 @@ const Project = () => {
                 </a>
                 <a
                   href={github}
+                  rel='noreferrer'
+                  target='_blank'
                   className={`${
                     lightmode ? 'bg-primary500' : 'bg-primary800'
                   } font-bold p-5 ${
