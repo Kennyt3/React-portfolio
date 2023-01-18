@@ -2,6 +2,7 @@ import image2 from './assets/image2.png'
 import image3 from './assets/image3.png'
 import image4 from './assets/image4.png'
 import image1 from './assets/image1.png'
+import image5 from './assets/image5.png'
 
 export const projectData = [
   {
@@ -26,8 +27,18 @@ export const projectData = [
   },
   {
     id: 3,
-    name: 'Teamkernel',
+    name: 'TMK Calculator',
     pic: image3,
+    details:
+      'A web application used to do basic mathematical calculations, built using React, Tailwind and Javascript',
+    live: 'https://tmkcalculator.netlify.app/',
+    github: 'https://github.com/Kennyt3/Calculator',
+    aos: 'fade-up',
+  },
+  {
+    id: 4,
+    name: 'Teamkernel',
+    pic: image4,
     details:
       'A review web application, to submit reviews on services built using Reactjs aand styled components',
     live: 'https://teamkernel.netlify.app/',
@@ -35,9 +46,9 @@ export const projectData = [
     aos: 'fade-down-left',
   },
   {
-    id: 4,
+    id: 5,
     name: "Mercy's To-do",
-    pic: image4,
+    pic: image5,
     details:
       'A To-do web application for creating to do lists, built using Html, CSS and Javascript',
     live: 'https://mercystodo.netlify.app/',
