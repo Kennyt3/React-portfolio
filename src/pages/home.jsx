@@ -1,4 +1,4 @@
-import Navbar from '../components/navbar'
+// import Navbar from '../components/navbar'
 import Snowfall from 'react-snowfall'
 
 import { useProvider } from '../components/context'
@@ -26,7 +26,7 @@ const Home = () => {
           />
           <div className='max-w-7xl mx-auto px-3'>
             <div>
-              <Navbar />
+              {/* <Navbar /> */}
               <Hero />
             </div>
           </div>

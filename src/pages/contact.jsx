@@ -1,5 +1,5 @@
 import { useProvider } from '../components/context'
-import Navbar from '../components/navbar'
+// import Navbar from '../components/navbar'
 import Snowfall from 'react-snowfall'
 import Cform from '../components/cform'
 
@@ -21,12 +21,12 @@ const Contact = () => {
         />
 
         <div className='max-w-7xl mx-auto px-3'>
-          <Navbar />
-          <div className='max-w-5xl mx-auto mt-24'>
+          {/* <Navbar /> */}
+          <div className='max-w-5xl mx-auto pt-32'>
             <h2
               className={`${
                 lightmode ? 'text-primary800' : 'text-primary600'
-              } text-3xl mt-20 text-center font-bold`}
+              } text-3xl text-center font-bold`}
             >
               Would you like to reach out?
             </h2>

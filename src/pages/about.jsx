@@ -1,6 +1,6 @@
 import { useProvider } from '../components/context'
 import { useEffect } from 'react'
-import Navbar from '../components/navbar'
+// import Navbar from '../components/navbar'
 import Me from '../components/me'
 import { motion } from 'framer-motion'
 import Snowfall from 'react-snowfall'
@@ -31,8 +31,8 @@ const About = () => {
         />
         <div className='max-w-7xl  mx-auto px-3  pb-5'>
           <div>
-            <Navbar />
-            <div className='max-w-5xl mt-20 mx-auto'>
+            {/* <Navbar /> */}
+            <div className='max-w-5xl pt-10 sm:p-20 mx-auto'>
               <motion.div
                 initial={{
                   x: 150,
@@ -45,7 +45,7 @@ const About = () => {
                 transition={{ duration: 2 }}
               >
                 <h1
-                  className='mt-5 sm:mt-10 ml-5 text-2xl font-semibold'
+                  className=' ml-5 text-2xl font-semibold'
                   data-aos='fade-down'
                 >
                   About Me
