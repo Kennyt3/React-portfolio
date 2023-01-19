@@ -1,18 +1,18 @@
 import React from 'react'
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useProvider } from './context'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+// import AOS from 'aos'
+// import 'aos/dist/aos.css'
 import Socials from './socials'
 import Typewriter from 'typewriter-effect'
 
 const Hero = () => {
   const { lightmode } = useProvider()
-  useEffect(() => {
-    AOS.init()
-    AOS.refresh()
-  }, [])
+  // useEffect(() => {
+  //   AOS.init()
+  //   AOS.refresh()
+  // }, [])
   return (
     <div className='max-w-5xl mx-auto px-5 flex  h-75vh items-center justify-between'>
       <div className='flex flex-col  sm:gap-0 sm:flex-row m-auto items-center h-full w-full justify-center sm:justify-between p-5 text-center'>

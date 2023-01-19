@@ -32,7 +32,7 @@ const About = () => {
         <div className='max-w-7xl  mx-auto px-3  pb-5'>
           <div>
             <Navbar />
-            <div className='max-w-5xl mt-20 mx-auto'>
+            <div className='max-w-5xl overflow-x-hidden mt-20 mx-auto'>
               <motion.div
                 initial={{
                   x: 150,
