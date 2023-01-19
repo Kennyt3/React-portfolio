@@ -1,6 +1,6 @@
 import { useProvider } from '../components/context'
 import { useEffect } from 'react'
-// import Navbar from '../components/navbar'
+import Navbar from '../components/navbar'
 import Snowfall from 'react-snowfall'
 import Project from '../components/projects'
 import { motion } from 'framer-motion'
@@ -29,7 +29,7 @@ const Projects = () => {
         />
         <div className='plan:max-w-7xl overflow-x-hidden mx-auto px-3'>
           <div>
-            {/* <Navbar /> */}
+            <Navbar />
             <motion.div
               initial={{
                 x: 150,
