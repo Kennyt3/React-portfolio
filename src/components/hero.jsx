@@ -14,7 +14,7 @@ const Hero = () => {
   //   AOS.refresh()
   // }, [])
   return (
-    <div className='max-w-5xl mx-auto px-5 flex  h-75vh items-center justify-between'>
+    <div className='max-w-5xl mx-auto px-5 flex  h-75vh items-center overflow-hidden justify-between'>
       <div className='flex flex-col  sm:gap-0 sm:flex-row m-auto items-center h-full w-full justify-center sm:justify-between p-5 text-center'>
         <div className=' max-w-md'>
           <motion.div

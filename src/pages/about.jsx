@@ -32,7 +32,7 @@ const About = () => {
         <div className='max-w-7xl  mx-auto px-3  pb-5'>
           <div>
             <Navbar />
-            <div className='max-w-5xl overflow-x-hidden mt-20 mx-auto'>
+            <div className='max-w-5xl overflow-hidden  mt-20 mx-auto'>
               <motion.div
                 initial={{
                   x: 150,
@@ -53,7 +53,7 @@ const About = () => {
               </motion.div>
               <div className=' mx-5  flex flex-col xmd:flex-row'>
                 <Me />
-                <div className='mt-5 overflow-x-hidden  basis-1/2 sm:flex items-center'>
+                <div className='mt-5 overflow-hidden  basis-1/2 sm:flex items-center'>
                   <img
                     src={IMG}
                     alt='Mercy Taiwo'
