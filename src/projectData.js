@@ -4,10 +4,21 @@ import image4 from './assets/image4.png'
 import image1 from './assets/image1.png'
 import image5 from './assets/image5.png'
 import image6 from './assets/image6.png'
+import image7 from './assets/image7.png'
 
 export const projectData = [
   {
     id: 1,
+    name: 'BLOG CMS',
+    pic: image7,
+    details:
+      'A User Friendly Blog cms built using Next js, Node js, mongodb and aws-sdk',
+    live: 'https://wryt-it.vercel.app/',
+    github: 'https://github.com/Kennyt3/WrytIt',
+    aos: 'fade-up',
+  },
+  {
+    id: 2,
     name: 'Quizzard',
     pic: image1,
     details:
@@ -17,7 +28,7 @@ export const projectData = [
     aos: 'fade-up-left',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Jokesbot',
     pic: image2,
     details:
@@ -27,7 +38,7 @@ export const projectData = [
     aos: 'fade-up-right',
   },
   {
-    id: 3,
+    id: 4,
     name: 'TMK Calculator',
     pic: image3,
     details:
@@ -37,17 +48,18 @@ export const projectData = [
     aos: 'fade-up',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Boma Fashion Store',
     pic: image4,
-    details: 'An fashion ecommerce built using React, Tailwind and Javascript',
+    details:
+      'A fashion ecommerce app built using React, Tailwind and Javascript',
     live: 'https://bomafashion.netlify.app/',
     github: 'https://github.com/Kennyt3/BOMA',
     aos: 'fade-right',
   },
   {
-    id: 5,
-    name: 'Teamkernel',
+    id: 6,
+    name: 'REVIEW ME',
     pic: image5,
     details:
       'A review web application, to submit reviews on services built using Reactjs aand styled components',
@@ -56,8 +68,8 @@ export const projectData = [
     aos: 'fade-down-left',
   },
   {
-    id: 6,
-    name: "Mercy's To-do",
+    id: 7,
+    name: '2-do Planner',
     pic: image6,
     details:
       'A To-do web application for creating to do lists, built using Html, CSS and Javascript',
