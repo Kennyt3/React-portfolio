@@ -1,76 +1,30 @@
-const { transform } = require('framer-motion')
-const { BsTranslate } = require('react-icons/bs')
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
-      colors: {
-        primary800: 'rgb(8 145 178)',
-        primary800: 'rgb(183,92,255)',
-        primary900: 'rgb(245 245 220)',
-        primary900: 'rgb(204 213 243)',
-        primary100: '#282c34',
-        primary200: 'rgb(178, 185, 207)',
-        primary300: 'rgb(204, 213, 243)',
-        primary400: 'rgb(24, 185, 207)',
-
-        primary500: 'rgb(204 213 243)',
-        primary600: 'rgb(40, 44, 52)',
-        primary10: 'white',
-        primary20: 'rgb(183,92,255)',
-      },
-      keyframes: {
-        dropdown: {
-          '0%': {
-            opacity: 0,
-            transform: 'translateY(-100px)',
-          },
-
-          '100%': {
-            opacity: 1,
-            transform: 'translateY(0)',
-          },
-        },
-        goup: {
-          '0%': {
-            transform: 'translateY(0)',
-          },
-
-          '100%': {
-            transform: 'translateY(-600px)',
-          },
-        },
-      },
-      // keyframes: {
-      //   },
-      // },
-
-      animation: {
-        dropdown: 'dropdown 0.5s ease-in-out',
-        goup: 'goup 4.5s ease-in-out',
-      },
-      width: {
-        proj: '400px',
-      },
-
-      height: {
-        25: '100px',
-        '75vh': '75vh',
-      },
-      borderColor: {},
-
-      borderRadius: {
-        '2.5xl': '20px',
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       screens: {
-        xmd: '940px',
-        ll: '400px',
-        plan: '850px',
+        ll: '1100px',
+        tl: '1200px',
+        sl: '500px',
       },
-      maxWidth: {
-        ll: '70px',
+
+      colors: {
+        bgHeader: '#2C3E50',
+        bgPrimary: '#F8F8F8',
+        textPrimary: '#333333',
+        textHeader: 'white',
+        accentPrimary: '#E74C3C',
+        accentSecondary: '#3498DB',
       },
     },
   },
