@@ -52,6 +52,7 @@ const UserProvider = ({ children }) => {
 }
 
 export default UserProvider
+
 export const useContextValue = () => {
   return useContext(UserContext)
 }
