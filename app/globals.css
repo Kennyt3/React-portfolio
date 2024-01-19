@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+* {
+  font-family: 'Raleway';
+  /* font-family: 'Great Vibes', cursive; */
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
 .navbar {
   min-width: 500px;
   @media (max-width: 900px) {
@@ -86,6 +93,7 @@
   line-height: 40px;
   font-weight: 700;
   font-family: 'Great Vibes', cursive;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 * {
@@ -141,18 +149,7 @@ h5 {
 h1 {
   font-size: 2.5rem;
 }
-/* section {
-  margin-top: 8rem;
-}
-section > h2,
-section > h5 {
-  text-align: center;
-  color: var(--color-light);
-}
-section > h2 {
-  color: var(--color-primary);
-  margin-bottom: 3rem;
-} */
+
 .text-light {
   color: var(--color-light);
 }
@@ -167,11 +164,13 @@ a:hover {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
+  padding: 0.5rem 1.5rem;
   cursor: pointer;
+  font-weight: large;
   border-radius: 0.4rem;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+  text-transform: uppercase;
 }
 .btn:hover {
   background-color: var(--color-white);
@@ -188,6 +187,10 @@ img {
   object-fit: cover;
 }
 
+header.first h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 /*    media queries for medium devices */
 
 @media screen and (max-width: 1024px) {
@@ -210,14 +213,14 @@ img {
   } */
 }
 
-/*    -------- section.first componenet ----- */
+/*    -------- header.first componenet ----- */
 
 section {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-section.first {
+header.first {
   height: 100vh;
   padding-top: 1rem;
   overflow: hidden;
@@ -243,11 +246,6 @@ section.first {
   position: absolute;
   left: 0;
   bottom: 3rem;
-}
-
-section.first h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .header__socials::after {
@@ -279,12 +277,12 @@ section.first h1 {
 
 /* ----- media queries -----*/
 @media screen and (max-width: 1024px) {
-  section.first {
+  header.first {
     height: 68vh;
   }
 }
 @media screen and (max-width: 600px) {
-  section.first {
+  header.first {
     height: 100vh;
   }
   .header__socials,
@@ -327,4 +325,73 @@ nav a:hover {
 nav a.active {
   background: var(--color-primary);
   color: var(--color-bg);
+}
+
+/* navigation */
+
+.nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  z-index: 3;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+.nav a {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  background: transparent;
+  padding: 0.9rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  transition: background 400ms ease-out;
+}
+.nav-span {
+  position: absolute;
+  top: -60px;
+  left: -10px;
+  background: rgba(47, 47, 138, 0.6);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: none;
+}
+
+.nav a:hover {
+  color: var(--color-primary);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.nav a:hover .nav-span {
+  display: block;
+}
+
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+/* ============================== Media Queries-Small ======================== */
+@media screen and (max-width: 768px) {
+  .nav {
+    gap: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav {
+    padding: 0.5rem 0.9rem;
+    gap: 0.5rem;
+  }
 }
