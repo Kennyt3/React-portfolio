@@ -34,15 +34,15 @@ const Header = (page) => {
           <div className='text-center'>
             <span>Hi there,</span>
             <h1>
-              I am <span className='mercy'>Mercy Taiwo</span>.
+              I am <span className='mercy'>Mercy Taiwo</span>
             </h1>
-            <h2>Software Developer</h2>
+            <h2>A Software Developer</h2>
             <div className=' flex  gap-4 justify-center mt-5'>
               <button className='btn'>My Resume</button>
               <button className='btn btn-primary'>Say Hi</button>
             </div>
           </div>
-          <Image src={bitty} className='w-[300px] h-[300px]' />
+          <Image src={bitty} className='w-[350px] h-[350px]' />
         </main>
       </header>
     </>

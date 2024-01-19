@@ -12,23 +12,32 @@ const Nav = () => {
   return (
     <nav className='nav'>
       <Link
-        href='#home'
+        href='/#'
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}
       >
         <span className='nav-span'>Home</span>
         <BiHomeHeart />
       </Link>
-      <Link href='#about' className={activeNav === '#about' ? 'active' : ''}>
+      <Link
+        href='/#about'
+        onClick={() => setActiveNav('about')}
+        className={activeNav === 'about' ? 'active' : ''}
+      >
         <span className='nav-span'>About</span>
         <CgUserlane />
       </Link>
-      <Link href='#skills' className={activeNav === '#skills' ? 'active' : ''}>
+      <Link
+        href='/#skills'
+        onClick={() => setActiveNav('skills')}
+        className={activeNav === 'skills' ? 'active' : ''}
+      >
         <span className='nav-span'>Experience</span>
         <BsPersonWorkspace />
       </Link>
       <Link
-        href='#portfolio'
+        href='/#portfolio'
+        onClick={() => setActiveNav('#portfolio')}
         className={activeNav === '#portfolio' ? 'active' : ''}
       >
         <span className='nav-span'>Portfolio</span>
@@ -36,6 +45,7 @@ const Nav = () => {
       </Link>
       <Link
         href='#contact'
+        onClick={() => setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}
       >
         <span className='nav-span'>Contact</span>
