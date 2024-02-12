@@ -3,6 +3,7 @@ import bitty from '@/public/img/heroimg.webp'
 import logo from '../public/img/gack.png'
 import Image from 'next/image'
 import { FaLinkedin, FaXTwitter } from 'react-icons/fa6'
+import CV from '@/public/img/mercy_taiwo.pdf'
 import { FaGithub } from 'react-icons/fa'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { useState, useEffect } from 'react'
@@ -46,7 +47,8 @@ const Header = (page) => {
                   options={{
                     strings: [
                       'I specialize in building web solutions and experiences for individuals and organizations.',
-                      'I have experience working with a variety of programming languages and technologies, and I am able to adapt to new technologies quickly. ',
+                      'I have experience working with a variety of programming languages and technologies',
+                      'I am quick to adapt to new technologies quickly and a fast learner. ',
                     ],
                     autoStart: true,
                     loop: true,
@@ -54,8 +56,12 @@ const Header = (page) => {
                 />
               </p>
               <div className=' flex  gap-4 justify-center mt-5'>
-                <button className='btn'>My Resume</button>
-                <button className='btn btn-primary'>Say Hi</button>
+                <a href={CV} className='cta btn btn-2 btn-3' download>
+                  Resume
+                </a>
+                <button className='btn btn-primary cta btn-2 btn-3'>
+                  Say Hi
+                </button>
               </div>
             </div>
             <Image src={bitty} className='w-[350px] h-[350px]' />

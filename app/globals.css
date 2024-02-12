@@ -460,3 +460,7 @@ nav a.active {
 .text-div {
   flex-basis: 60%;
 }
+
+.bool {
+  box-shadow: 8px 8px 10px -6px;
+}
