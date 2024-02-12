@@ -7,6 +7,7 @@ import { FaGithub } from 'react-icons/fa'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { useState, useEffect } from 'react'
 import { useContextValue } from '../context/userContext'
+import Typewriter from 'typewriter-effect'
 const Header = (page) => {
   const [scrolled, setScrolled] = useState(false)
   const {
@@ -39,9 +40,17 @@ const Header = (page) => {
               I am <span className='mercy'>Mercy Taiwo</span>
             </h1>
             <h2>A Software Developer</h2>
-            <p>
-              I specialize in building web solutions and experiences for
-              individuals and organizations.
+            <p className='text-[#4db5ff]'>
+              <Typewriter
+                options={{
+                  strings: [
+                    'I specialize in building web solutions and experiences for individuals and organizations.',
+                    'I have experience working with a variety of programming languages and technologies, and I am able to adapt to new technologies quickly. ',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </p>
             <div className=' flex  gap-4 justify-center mt-5'>
               <button className='btn'>My Resume</button>
@@ -56,7 +65,7 @@ const Header = (page) => {
             >
               <FaLinkedin style={{ color: '#4db5ff', fontSize: '1.5em' }} />
             </a>
-            <a href='https://github.com/Kennyt3' target='_blank'>
+            <a href='https://twitter.com/mercyWritesCode' target='_blank'>
               <FaXTwitter style={{ color: '#4db5ff', fontSize: '1.5em' }} />
             </a>
             <a href='https://github.com/Kennyt3' target='_blank'>
@@ -64,7 +73,7 @@ const Header = (page) => {
             </a>
           </div>
           <a href='#contact' class='scroll'>
-            Scroll Down
+            Contact Me
           </a>
         </main>
       </header>
