@@ -31,7 +31,11 @@ const Header = (page) => {
                   </span>
                   <span className='list-disc list-item'>
                     I graduated top of my class from the Women Techsters
-                    Fellowship class of &lsquo;24
+                    Fellowship class of &lsquo;24.
+                  </span>
+                  <span className='list-disc list-item'>
+                    I am Cynophobic, and although I think dogs are cute, I get
+                    terrified whenever there is one close to me.
                   </span>
                   <span className='list-disc list-item'>
                     My favorite pastime typically involves watching a compelling
