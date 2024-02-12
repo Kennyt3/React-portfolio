@@ -8,7 +8,7 @@ const Header = (page) => {
       <main id='about' className='second'>
         <div className='mx-auto h-full flex justify-center items-center relative'>
           <div className='doro'>
-            <h1 className='text-center text-[#4db5ff]'>Get to know me</h1>
+            <h1 className='text-center text-[#4db5ff]'>About Me</h1>
             <div className='xl:w-[60vw] mx-auto  md:flex md:justify-between md:items-center'>
               <div className='image-div'>
                 <Image
