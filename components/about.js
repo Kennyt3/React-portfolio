@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import Meme from '@/public/img/circle.jpg'
+import { FaLinkedin, FaXTwitter } from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa'
 const Header = (page) => {
   return (
     <>
       <main id='about' className='second'>
-        <div className='mx-auto h-full flex justify-center items-center'>
+        <div className='mx-auto h-full flex justify-center items-center relative'>
           <div className='doro'>
             <h1 className='text-center text-[#4db5ff]'>Get to know me</h1>
             <div className='xl:w-[60vw] mx-auto  md:flex md:justify-between md:items-center'>
@@ -26,7 +28,7 @@ const Header = (page) => {
                     I am a Full stack web developer.
                   </span>
                   <span className='list-disc list-item'>
-                    I hold a bachelor's degree in Law from Obafemi Awolowo
+                    I hold a bachelor&apos;s degree in Law from Obafemi Awolowo
                     University
                   </span>
                   <span className='list-disc list-item'>
@@ -45,6 +47,23 @@ const Header = (page) => {
               </div>
             </div>
           </div>
+          <div className='social__links'>
+            <a
+              href='https://www.linkedin.com/in/mercy-taiwo-002b26131'
+              target='_blank'
+            >
+              <FaLinkedin style={{ color: '#4db5ff', fontSize: '1.5em' }} />
+            </a>
+            <a href='https://twitter.com/mercyWritesCode' target='_blank'>
+              <FaXTwitter style={{ color: '#4db5ff', fontSize: '1.5em' }} />
+            </a>
+            <a href='https://github.com/Kennyt3' target='_blank'>
+              <FaGithub style={{ color: '#4db5ff', fontSize: '1.5em' }} />
+            </a>
+          </div>
+          <a href='#contact' class='scroll'>
+            Contact Me
+          </a>
         </div>
       </main>
     </>
