@@ -7,7 +7,7 @@ import Skills from '@/components/skills'
 export default function Home() {
   return (
     <>
-      <section>
+      <section className='homePage'>
         <Header />
         <About />
         <Skills />
