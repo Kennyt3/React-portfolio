@@ -299,10 +299,15 @@ header.first {
   overflow: hidden;
 }
 main.second,
-main.third,
 main.fourth {
   height: 100vh;
   overflow: hidden;
+}
+
+main.third {
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
 }
 .header__container {
   text-align: center;
@@ -426,6 +431,7 @@ nav a.active {
     bottom: 2rem;
   }
 }
+
 .nav a {
   color: var(--text-color);
   font-size: 1.2rem;
@@ -489,4 +495,8 @@ nav a.active {
 
 .bool {
   box-shadow: 8px 8px 10px -6px;
+}
+
+.boxy {
+  box-shadow: rgba(44, 44, 108, 0.59) 5px 5px 0px 0px;
 }
