@@ -6,14 +6,12 @@ const Header = (page) => {
   return (
     <>
       <main id='about' className='second'>
-        <div className='mx-auto h-full flex justify-center items-center relative'>
+        <div className='mx-auto h-full md:flex justify-center items-center relative'>
           <div className='doro dub'>
-            <div>
-              <h1 className='text-center mb-[10px] md:mb-0  text-[#4db5ff]'>
-                About Me
-              </h1>
-              <div className='xl:w-[60vw] mx-auto  md:flex md:justify-between md:items-center'>
-                <div className='image-div mb-[10px] md:mb-0'>
+            <div className='flex flex-col gap-10 md:block mt-10 md:mt-0'>
+              <h1 className='text-center text-[#4db5ff]'>About Me</h1>
+              <div className='xl:w-[60vw] mx-auto grid gap-10 md:gap-0  md:flex md:justify-between md:items-center'>
+                <div className='image-div'>
                   <Image
                     src={Meme}
                     width={500}
