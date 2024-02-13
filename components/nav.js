@@ -37,8 +37,8 @@ const Nav = () => {
       </Link>
       <Link
         href='/#portfolio'
-        onClick={() => setActiveNav('#portfolio')}
-        className={activeNav === '#portfolio' ? 'active' : ''}
+        onClick={() => setActiveNav('portfolio')}
+        className={activeNav === 'portfolio' ? 'active' : ''}
       >
         <span className='nav-span'>Portfolio</span>
         <MdWork />

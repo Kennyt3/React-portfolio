@@ -4,6 +4,7 @@ import Header from '@/components/header'
 import About from '@/components/about'
 import Nav from '@/components/nav'
 import Skills from '@/components/skills'
+import Portfolio from '@/components/portfolio'
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
         <Header />
         <About />
         <Skills />
+        <Portfolio />
         <Nav />
       </section>
     </>

@@ -36,7 +36,7 @@ const Header = (page) => {
       <header className='first'>
         <div className='mx-auto h-full flex justify-center items-center'>
           <main className='dub-col-wrapper'>
-            <div className='textDiv'>
+            <div className='textDiv w-full mx-auto'>
               <span>Hi there!</span>
               <h1>
                 I am <span className='mercy'>Mercy Taiwo</span>
@@ -64,7 +64,11 @@ const Header = (page) => {
                 </button>
               </div>
             </div>
-            <Image src={bitty} className='w-[350px] h-[350px]' />
+            <div></div>
+            <Image
+              src={bitty}
+              className=' mx-auto w-full md:w-[350px] md:h-[350px]'
+            />
             <div className='social__links'>
               <a
                 href='https://www.linkedin.com/in/mercy-taiwo-002b26131'
