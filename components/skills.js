@@ -1,13 +1,10 @@
-import { work } from '@/components/data/personal'
-import Image from 'next/image'
-import Meme from '@/public/img/circle.jpg'
 import { FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 import { FaGithub } from 'react-icons/fa'
 const Skills = (page) => {
   return (
     <>
       <main id='skills' className='third'>
-        <div className='mx-auto mt-3 md:mt-0 h-full flex justify-center items-center relative'>
+        <div className='mx-auto mt-3 md:mt-0 h-full  relative'>
           <div className='doro dub h-full'>
             <div className=' w-full mx-auto md:min-h-[70vh] grid items-center md:flex md:justify-between rounded-[20px] border-[#4db5ff] border-solid border-[5px] px-5 md:gap-10'>
               <div className='basis-1/2'>
