@@ -416,11 +416,15 @@ nav a.active {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: 10px;
   display: flex;
   gap: 2rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
+
+  @media (min-width: 768px) {
+    bottom: 2rem;
+  }
 }
 .nav a {
   color: var(--text-color);

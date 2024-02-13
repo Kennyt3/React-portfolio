@@ -4,28 +4,15 @@ const Skills = (page) => {
     <>
       <main id='skills' className='third'>
         <div className='mx-auto h-full flex justify-center items-center'>
-          {/* <div className='xl:w-[70vw] mx-auto min-h-[85vh] grid items-center md:flex md:justify-between rounded-[20px] border-[#4db5ff] border-solid border-[5px] px-10 '>
-            <div className='basis-1/2 h-full'>
-              <h2>Work Experiences</h2>
-              <div>
-                {work.map((item, key) => {
-                  return (
-                    <div className='bg-[#4db5ff] max-w-[300px] my-10 rounded-[10px]'>
-                      <p>{item.date}</p>
-                      <h2>{item.org}</h2>
-                      <p>{item.details}</p>
-                    </div>
-                  )
-                })}
+          <div className='doro dub h-full'>
+            <div className=' w-full mx-auto min-h-[70vh] pl:min-h-[70vh] grid items-center md:flex md:justify-between rounded-[20px] border-[#4db5ff] border-solid border-[5px]'>
+              <div className='bg-[#4db5ff] max-w-[300px] my-10 rounded-[10px] w-40 h-40'>
+                PURE LOVE
+              </div>
+              <div className='bg-[#4db5ff] max-w-[300px] my-10 rounded-[10px] w-40 h-40'>
+                <p>PURE LOVE</p>
               </div>
             </div>
-            <div className='basis-1/2 h-full'>
-              <h2>Education & Certifications</h2>
-            </div>
-          </div> */}
-          <div className='xl:w-[70vw] mx-auto min-h-[85vh] grid items-center md:flex md:justify-between rounded-[20px] border-[#4db5ff] border-solid border-[5px] px-10 '>
-            <div></div>
-            <div></div>
           </div>
         </div>
       </main>

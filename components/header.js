@@ -55,7 +55,7 @@ const Header = (page) => {
                   }}
                 />
               </p>
-              <div className=' flex  gap-4 justify-center mt-5'>
+              <div className=' flex gap-4 justify-center mt-5'>
                 <a href={CV} className='cta btn btn-2 btn-3' download>
                   Resume
                 </a>
