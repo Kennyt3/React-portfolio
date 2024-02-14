@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Header from '@/components/header'
 import About from '@/components/about'
 import Nav from '@/components/nav'
-import Skills from '@/components/skills'
+import Resume from '@/components/resume'
+import Contact from '@/components/contact'
 import Portfolio from '@/components/portfolio'
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
       <section className='homePage'>
         <Header />
         <About />
-        <Skills />
+        <Resume />
         <Portfolio />
+        <Contact />
         <Nav />
       </section>
     </>

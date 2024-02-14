@@ -28,11 +28,11 @@ const Nav = () => {
         <CgUserlane />
       </Link>
       <Link
-        href='/#skills'
-        onClick={() => setActiveNav('skills')}
-        className={activeNav === 'skills' ? 'active' : ''}
+        href='/#resume'
+        onClick={() => setActiveNav('resume')}
+        className={activeNav === 'resume' ? 'active' : ''}
       >
-        <span className='nav-span'>Skills</span>
+        <span className='nav-span'>Résumé</span>
         <BsPersonWorkspace />
       </Link>
       <Link

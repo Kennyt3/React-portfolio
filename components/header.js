@@ -56,12 +56,10 @@ const Header = (page) => {
                 />
               </p>
               <div className=' flex gap-4 justify-center mt-5'>
-                <a href={CV} className='cta btn btn-2 btn-3' download>
+                <a href={CV} className='cta btn' download>
                   Resume
                 </a>
-                <button className='btn btn-primary cta btn-2 btn-3'>
-                  Say Hi
-                </button>
+                <button className='btn btn-primary'>Say Hi</button>
               </div>
             </div>
             <div></div>
