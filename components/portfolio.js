@@ -73,9 +73,9 @@ const Portfolio = (page) => {
                 </button>
               </div>
             </div>
-            <div className='w-full mx-auto md:h-[80vh] rounded-[20px] border-[#4db5ff] border-solid border-[5px] px-5 md:gap-10'>
-              <div className='px-3 md:max-h-[90%] scrollbar md:overflow-y-scroll'>
-                <div className=' grid items-center md:grid-cols-2 gap-10 '>
+            <div className='w-full mx-auto h-[68vh] md:h-[80vh] rounded-[20px] border-[#4db5ff] border-solid border-[5px] px-5 md:gap-10'>
+              <div className='px-3 max-h-[90%] scrollbar overflow-y-scroll'>
+                <div className=' grid items-center md:grid-cols-2 md:gap-10 '>
                   {arr.map((item, key) => {
                     return (
                       <article
