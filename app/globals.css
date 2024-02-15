@@ -308,15 +308,18 @@ section {
   margin-right: auto;
 }
 header.first {
-  height: 120vh;
+  /* height: 150vh; */
+  height: 100vh;
   @media screen and (min-width: 600px) {
     height: 100vh;
   }
-  position: relative;
+  @media screen and (max-width: 1200px) {
+    position: relative;
+  }
 }
 main.second,
 main.fourth {
-  height: 120vh;
+  height: 150vh;
   @media screen and (min-width: 600px) {
     height: 100vh;
   }
@@ -337,13 +340,13 @@ main.fourth {
 }
 
 main.third {
-  height: 120vh;
+  height: 150vh;
   @media screen and (min-width: 600px) {
     height: 100vh;
   }
 }
 main.fifth {
-  height: 120vh;
+  height: 150vh;
   @media screen and (min-width: 600px) {
     height: 100vh;
   }
@@ -351,7 +354,7 @@ main.fifth {
 .header__container {
   text-align: center;
   height: 100%;
-  position: relative;
+  /* position: relative; */
 }
 
 input::placeholder {
@@ -368,13 +371,16 @@ textarea::placeholder {
 }
 
 .social__links {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+  }
 }
 
 .social__links::after {
@@ -404,15 +410,7 @@ textarea::placeholder {
 }
 
 /* ----- media queries -----*/
-@media screen and (max-width: 1024px) {
-  header.first {
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 600px) {
-  header.first {
-    height: 100vh;
-  }
+@media screen and (max-width: 1200px) {
   .social__links,
   .scroll {
     display: none;

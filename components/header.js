@@ -34,7 +34,7 @@ const Header = (page) => {
   return (
     <>
       <header className='first'>
-        <div className='mx-auto h-full flex justify-center items-center'>
+        <div className='mx-auto h-full flex justify-center items-center md:relative'>
           <main className='dub-col-wrapper'>
             <div className='textDiv w-full mx-auto'>
               <span>Hi there!</span>

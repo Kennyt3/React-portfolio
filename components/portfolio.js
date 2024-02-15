@@ -9,9 +9,8 @@ const Portfolio = (page) => {
   return (
     <>
       <main id='portfolio' className='fourth'>
-        <div className='mx-auto mt-10 md:mt-0 h-full relative'>
+        <div className='mx-auto mt-10 md:mt-0 h-full xl:relative'>
           <div className='doro cne flex flex-col gap-5 pt-5 h-full'>
-            <h3 className='text-center text-[#4db5ff]'>Portfolio</h3>
             <div className='flex flex-col md:flex-row md:gap-10 gap-2  w-full justify-center items-center bg-[#4db5ff] md:w-fit mx-auto rounded-[10px] px-5 py-2'>
               <div className='bg-white w-full max-w-[250px] flex md:block items-center justify-center md:w-[auto] md:bg-[#4db5ff] rounded-[10px]'>
                 <button

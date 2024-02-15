@@ -39,13 +39,15 @@ const Contact = (page) => {
   return (
     <>
       <main id='contact' className='fifth'>
-        <div className='mx-auto md:mt-0 h-full relative'>
-          <div className='doro cne flex flex-col gap-5 pt-5 h-full'>
-            <h3 className='text-center'>Contact Me</h3>
-            <div className='w-full mx-auto md:min-h-[80vh] grid items-center md:flex md:justify-between rounded-[20px] border-[#4db5ff] border-solid border-[5px] px-5 md:gap-10'>
+        <div className='mx-auto md:mt-0 h-full xl:relative'>
+          <div className='doro cne flex flex-col gap-5 pt-1 h-full'>
+            <h3 className='text-center text-[#4db5ff] text-[30px] leading-[32px]'>
+              Contact Me
+            </h3>
+            <div className='w-full mx-auto md:min-h-[80vh] grid items-center md:flex md:justify-between rounded-[20px] md:border-[#4db5ff] md:border-solid border-[5px] px-5 md:gap-10'>
               <div className='md:flex md:flex-row w-full'>
                 <div className='md:basis-[30%] md:block '>
-                  <div className='md:max-w-[200px] mb-3 md:min-h-[50px] flex-col flex justify-center items-center md:py-3 md:gap-2  rounded-[10px] border-[#4db5ff] border-solid border-[2px]'>
+                  <div className='md:max-w-[200px] mb-3 md:min-h-[50px] flex-col flex justify-center items-center md:py-3 gap-2  rounded-[10px] border-[#4db5ff] border-solid border-[2px]'>
                     <MdOutlineMailOutline
                       style={{ color: '#4db5ff', fontSize: '2em' }}
                     />
@@ -58,7 +60,7 @@ const Contact = (page) => {
                       Send an email
                     </a>
                   </div>
-                  <div className='md:max-w-[200px] mb-3 md:min-h-[50px] flex-col flex justify-center items-center md:py-3 md:gap-2  rounded-[10px] border-[#4db5ff] border-solid border-[2px]'>
+                  <div className='md:max-w-[200px] mb-3 md:min-h-[50px] flex-col flex justify-center items-center md:py-3 gap-2  rounded-[10px] border-[#4db5ff] border-solid border-[2px]'>
                     <FaFacebookMessenger
                       style={{ color: '#4db5ff', fontSize: '2em' }}
                     />
@@ -71,7 +73,7 @@ const Contact = (page) => {
                       Send a message
                     </a>
                   </div>
-                  <div className='md:max-w-[200px] mb-3 md:min-h-[50px] flex-col flex justify-center items-center md:py-3 md:gap-2  rounded-[10px] border-[#4db5ff] border-solid border-[2px]'>
+                  <div className='md:max-w-[200px] mb-3 md:min-h-[50px] flex-col flex justify-center items-center md:py-3 gap-2  rounded-[10px] border-[#4db5ff] border-solid border-[2px] '>
                     <FaWhatsapp style={{ color: '#4db5ff', fontSize: '2em' }} />
                     <span className='text-[white]'>+2347011088408</span>
                     <a
