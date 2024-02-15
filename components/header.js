@@ -10,27 +10,6 @@ import { useState, useEffect } from 'react'
 import { useContextValue } from '../context/userContext'
 import Typewriter from 'typewriter-effect'
 const Header = (page) => {
-  const [scrolled, setScrolled] = useState(false)
-  const {
-    loggedIn,
-    setUserInfo,
-    setLoggedIn,
-    logout,
-    setShowMenu,
-    showMenu,
-    toggleScroll,
-  } = useContextValue()
-  useEffect(() => {
-    const func = () => setScrolled(window.pageYOffset > 500)
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', func)
-    }
-    func()
-
-    return () => {
-      window.removeEventListener('scroll', func)
-    }
-  }, [])
   return (
     <>
       <header className='first'>
