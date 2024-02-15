@@ -9,7 +9,7 @@ const Header = (page) => {
         <div className='mx-auto h-full md:flex justify-center items-center relative'>
           <div className='doro cne md:grid h-full'>
             <div className='flex flex-col gap-3 md:gap-10 md:block mt-10 md:mt-0 pt-1 md:pt-0'>
-              <h1 className='text-center text-[#4db5ff]'>About Me</h1>
+              <h3 className='text-center text-[20px]'>About Me</h3>
               <div className='xl:w-[60vw] mx-auto grid gap-10 md:gap-0  md:flex md:justify-between md:items-center'>
                 <div className='image-div'>
                   <Image
