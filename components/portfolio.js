@@ -75,7 +75,7 @@ const Portfolio = (page) => {
             </div>
             <div className='w-full mx-auto h-[68vh] md:h-[80vh] rounded-[20px] border-[#4db5ff] border-solid border-[5px] px-5 md:gap-10'>
               <div className='px-3 max-h-[90%] scrollbar overflow-y-scroll'>
-                <div className=' grid items-center md:grid-cols-2 md:gap-10 '>
+                <div className=' grid items-center md:grid-cols-2 gap-5 md:gap-10 '>
                   {arr.map((item, key) => {
                     return (
                       <article
@@ -89,12 +89,12 @@ const Portfolio = (page) => {
                         <p className='text-center font-bold'>{item.name}</p>
                         <div className='text-[#1f1f38] flex  items-center justify-around md:my-2'>
                           <a
-                            className='text-[#1f1f38] text-[14px] flex gap-2 items-center'
+                            className='text-[#1f1f38] hover:text-white text-[14px] flex gap-2 items-center'
                             target='_blank'
                             href={item.github}
                           >
                             <FaGithub
-                              style={{ color: '#1f1f38', fontSize: '1.5em' }}
+                              style={{ color: 'inherit', fontSize: '1.5em' }}
                             />
                             Github
                           </a>
@@ -104,7 +104,7 @@ const Portfolio = (page) => {
                             href={item.live}
                           >
                             <FaLink
-                              style={{ color: '#1f1f38', fontSize: '1.5em' }}
+                              style={{ color: 'inherit', fontSize: '1.5em' }}
                             />
                             Live
                           </a>

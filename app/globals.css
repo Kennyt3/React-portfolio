@@ -331,14 +331,10 @@ main.fourth {
 }
 
 main.third {
-  @media (min-width: 768px) {
-    height: 100vh;
-  }
+  height: 100vh;
 }
 main.fifth {
-  @media (min-width: 768px) {
-    height: 100vh;
-  }
+  height: 100vh;
 }
 .header__container {
   text-align: center;
@@ -346,6 +342,12 @@ main.fifth {
   position: relative;
 }
 
+input::placeholder {
+  color: #1f1f38;
+}
+textarea::placeholder {
+  color: #1f1f38;
+}
 .cta {
   /* margin-top: 2.5rem; */
   display: flex;
