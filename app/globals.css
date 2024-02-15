@@ -308,12 +308,18 @@ section {
   margin-right: auto;
 }
 header.first {
-  height: 100vh;
+  height: 120vh;
+  @media screen and (min-width: 600px) {
+    height: 100vh;
+  }
   position: relative;
 }
 main.second,
 main.fourth {
-  height: 100vh;
+  height: 120vh;
+  @media screen and (min-width: 600px) {
+    height: 100vh;
+  }
 }
 .scrollbar::-webkit-scrollbar {
   display: block;
@@ -331,10 +337,16 @@ main.fourth {
 }
 
 main.third {
-  height: 100vh;
+  height: 120vh;
+  @media screen and (min-width: 600px) {
+    height: 100vh;
+  }
 }
 main.fifth {
-  height: 100vh;
+  height: 120vh;
+  @media screen and (min-width: 600px) {
+    height: 100vh;
+  }
 }
 .header__container {
   text-align: center;

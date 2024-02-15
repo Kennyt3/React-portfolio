@@ -7,8 +7,8 @@ const Header = (page) => {
     <>
       <main id='about' className='second'>
         <div className='mx-auto h-full md:flex justify-center items-center relative'>
-          <div className='doro dub'>
-            <div className='flex flex-col gap-10 md:block mt-10 md:mt-0'>
+          <div className='doro cne md:grid h-full'>
+            <div className='flex flex-col gap-3 md:gap-10 md:block mt-10 md:mt-0'>
               <h1 className='text-center text-[#4db5ff]'>About Me</h1>
               <div className='xl:w-[60vw] mx-auto grid gap-10 md:gap-0  md:flex md:justify-between md:items-center'>
                 <div className='image-div'>
@@ -16,11 +16,11 @@ const Header = (page) => {
                     src={Meme}
                     width={500}
                     height={500}
-                    className='rounded-[50%] w-[300px] h-[300px] mx-auto'
+                    className='rounded-[50%] w-[250px] h-[250px] mx-auto'
                   ></Image>
                 </div>
                 <div className='text-div px-[16px]'>
-                  <p>
+                  <p className='text-[14px] md:text-[16px]'>
                     <span className='list-disc list-item'>
                       My name is Mercy Kehinde Taiwo.
                     </span>

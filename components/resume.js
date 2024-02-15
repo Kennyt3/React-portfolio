@@ -5,7 +5,7 @@ const Resume = (page) => {
     <>
       <main id='resume' className='third'>
         <div className='mx-auto mt-3 md:mt-0 h-full  relative'>
-          <div className='doro dub h-full'>
+          <div className='doro cne md:grid h-full pt-2 md:pt-0 '>
             <div className=' w-full mx-auto md:min-h-[70vh] grid items-center md:flex md:justify-between rounded-[20px] border-[#4db5ff] border-solid border-[5px] px-5 md:gap-10'>
               <div className='basis-1/2'>
                 <h3 className='text-center'>Experience</h3>

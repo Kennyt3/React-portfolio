@@ -20,7 +20,6 @@ const Contact = (page) => {
         'template_fwqvohd',
         form.current,
         'cRQmou1HpEeCnEv5T'
-
         // process.env.EMAIL_SERVICE,
         // process.env.EMAIL_TEMPLATE,
         // form.current,
