@@ -51,19 +51,37 @@ const Contact = (page) => {
                       style={{ color: '#4db5ff', fontSize: '2em' }}
                     />
                     <span className='text-[white]'>kennyt341@gmail.com</span>
-                    <button className='text-[#4db5ff]'>Send an email</button>
+                    <a
+                      href='mailto:kennyt341@gmail.com'
+                      className='text-[#4db5ff]'
+                      target='_blank'
+                    >
+                      Send an email
+                    </a>
                   </div>
                   <div className='md:max-w-[200px] mb-3 md:min-h-[50px] flex-col flex justify-center items-center md:py-3 md:gap-2  rounded-[10px] border-[#4db5ff] border-solid border-[2px]'>
                     <FaFacebookMessenger
                       style={{ color: '#4db5ff', fontSize: '2em' }}
                     />
                     <span className='text-[white]'>Mercy Taiwo</span>
-                    <button className='text-[#4db5ff]'>Send a message</button>
+                    <a
+                      href='https://www.facebook.com/mercy.taiwo.121/'
+                      className='text-[#4db5ff]'
+                      target='_blank'
+                    >
+                      Send a message
+                    </a>
                   </div>
                   <div className='md:max-w-[200px] mb-3 md:min-h-[50px] flex-col flex justify-center items-center md:py-3 md:gap-2  rounded-[10px] border-[#4db5ff] border-solid border-[2px]'>
                     <FaWhatsapp style={{ color: '#4db5ff', fontSize: '2em' }} />
                     <span className='text-[white]'>+2347011088408</span>
-                    <button className='text-[#4db5ff]'>Send a DM</button>
+                    <a
+                      href='https://wa.me/+2347011088408'
+                      className='text-[#4db5ff]'
+                      target='_blank'
+                    >
+                      Send a DM
+                    </a>
                   </div>
                 </div>
                 <div className='md:basis-[70%]'>
