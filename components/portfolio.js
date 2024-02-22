@@ -8,7 +8,7 @@ const Portfolio = (page) => {
   const [col, setCol] = useState('all')
   return (
     <>
-      <main id='portfolio' className='fourth'>
+      <section id='portfolio' className='portfolio'>
         <div className='mx-auto mt-10 md:mt-0 h-full xl:relative'>
           <div className='doro cne flex flex-col gap-5 pt-5 h-full'>
             <div className='flex flex-col md:flex-row md:gap-10 gap-2  w-full justify-center items-center bg-[#4db5ff] md:w-fit mx-auto rounded-[10px] px-5 py-2'>
@@ -134,7 +134,7 @@ const Portfolio = (page) => {
             Contact Me
           </a>
         </div>
-      </main>
+      </section>
     </>
   )
 }

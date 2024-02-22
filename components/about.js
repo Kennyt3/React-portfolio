@@ -5,13 +5,11 @@ import { FaGithub } from 'react-icons/fa'
 const Header = (page) => {
   return (
     <>
-      <main id='about' className='second'>
+      <section id='about' className='about'>
         <div className='mx-auto h-full md:flex justify-center items-center xl:relative'>
           <div className='doro cne md:grid h-full'>
             <div className='flex flex-col gap-3 md:gap-10 md:block mt-10 md:mt-0 pt-1 md:pt-0'>
-              <h3 className='text-center text-[#4db5ff] text-[30px] leading-[32px]'>
-                About Me
-              </h3>
+              <h2 className='text-center text-[#4db5ff]'>About Me</h2>
               <div className='xl:w-[60vw] mx-auto grid gap-2 md:gap-0  md:flex md:justify-between md:items-center'>
                 <div className='image-div'>
                   <Image
@@ -22,7 +20,7 @@ const Header = (page) => {
                   ></Image>
                 </div>
                 <div className='text-div px-[16px]'>
-                  <p className='text-[14px] md:text-[16px]'>
+                  <p className=''>
                     <span className='list-disc list-item'>
                       My name is Mercy Kehinde Taiwo.
                     </span>
@@ -70,7 +68,7 @@ const Header = (page) => {
             Contact Me
           </a>
         </div>
-      </main>
+      </section>
     </>
   )
 }

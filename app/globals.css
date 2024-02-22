@@ -4,15 +4,54 @@
 
 body,
 * {
-  /* font-family: 'Raleway'; */
-  /* font-family: 'Great Vibes', cursive; */
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
+p {
+  font-size: 16px;
+  line-height: 28px;
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 56px;
+  @media (min-width: 500px) {
+    font-size: 48px;
+  }
+}
+h2 {
+  font-size: 28px;
+  line-height: 40px;
+  @media (min-width: 500px) {
+    font-size: 32px;
+  }
+}
+h3 {
+  font-size: 16px;
+  line-height: 36px;
+  @media (min-width: 500px) {
+    font-size: 30px;
+  }
+}
+
+.textDiv {
+  flex-basis: 50%;
+  text-align: center;
+}
 .homePage {
   max-width: 1200px;
   margin-left: auto;
@@ -102,7 +141,6 @@ body,
   line-height: 40px;
   font-weight: 700;
   font-family: 'Great Vibes', cursive;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 * {
@@ -143,22 +181,9 @@ body {
   line-height: 1.7rem;
 }
 
-/*   ------ general styles --- */
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 500;
-}
-.textDiv {
-  flex-basis: 50%;
-  text-align: center;
 }
 
 .cne {
@@ -176,7 +201,6 @@ h5 {
 
 .dub {
   display: grid;
-  /* background-color: red; */
   min-height: 85vh;
   align-items: center;
   margin-left: auto;
@@ -191,7 +215,6 @@ h5 {
 
 .dub-col-wrapper {
   display: grid;
-  /* background-color: red; */
   min-height: 85vh;
   align-items: center;
   margin-left: auto;
@@ -208,39 +231,7 @@ h5 {
     width: 60vw;
   }
 }
-.textDiv h1 {
-  font-size: 3rem;
-  line-height: 3.5rem;
-}
 
-.textDiv p {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-}
-.textDiv h2 {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
-
-.textDiv button {
-  font-size: 18px;
-  font-weight: 600;
-}
-.doro h1 {
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: capitalize;
-}
-
-.about h2 {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-}
-
-.about button {
-  font-size: 18px;
-  font-weight: 600;
-}
 .text-light {
   color: var(--color-light);
 }
@@ -279,37 +270,18 @@ img {
   object-fit: cover;
 }
 
-header.first h1 {
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
-}
-/*    media queries for medium devices */
-
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
-  /* section {
-    margin-top: 6rem;
-  } */
 }
 
-/* ----- smaller devices */
-
-/* section > h2 {
-    margin-bottom: 2rem;
-  } */
-
-/*    -------- header.first componenet ----- */
-
-section {
+/* section {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-header.first {
-  /* height: 150vh; */
-  height: 100vh;
+} */
+.hero {
   @media screen and (min-width: 600px) {
     height: 100vh;
   }
@@ -317,9 +289,11 @@ header.first {
     position: relative;
   }
 }
-main.second,
-main.fourth {
-  height: 150vh;
+.about,
+.resume,
+.portfolio,
+.contact {
+  min-height: 100vh;
   @media screen and (min-width: 600px) {
     height: 100vh;
   }
@@ -339,22 +313,9 @@ main.fourth {
   border-radius: 20px;
 }
 
-main.third {
-  height: 150vh;
-  @media screen and (min-width: 600px) {
-    height: 100vh;
-  }
-}
-main.fifth {
-  height: 150vh;
-  @media screen and (min-width: 600px) {
-    height: 100vh;
-  }
-}
 .header__container {
   text-align: center;
   height: 100%;
-  /* position: relative; */
 }
 
 input::placeholder {
@@ -364,7 +325,6 @@ textarea::placeholder {
   color: #1f1f38;
 }
 .cta {
-  /* margin-top: 2.5rem; */
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -395,7 +355,6 @@ textarea::placeholder {
   height: 22rem;
   position: absolute;
   left: calc(50% - 11rem);
-  /* margin-top: 6rem; */
   border-radius: 12rem 12rem 0 0;
   padding: 7rem 1.5rem 1.5rem 1.5rem;
 }
@@ -408,8 +367,6 @@ textarea::placeholder {
   font-weight: 300;
   font-size: 0.9rem;
 }
-
-/* ----- media queries -----*/
 @media screen and (max-width: 1200px) {
   .social__links,
   .scroll {
@@ -468,10 +425,6 @@ nav a.active {
   gap: 2rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
-
-  /* @media (min-width: 768px) {
-    bottom: 1.5rem;
-  } */
 }
 
 .nav a {
@@ -512,8 +465,6 @@ nav a.active {
   background: var(--color-bg);
   color: var(--color-primary);
 }
-
-/* ============================== Media Queries-Small ======================== */
 @media screen and (max-width: 768px) {
   .nav {
     gap: 0.8rem;

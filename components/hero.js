@@ -9,10 +9,10 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { useState, useEffect } from 'react'
 import { useContextValue } from '../context/userContext'
 import Typewriter from 'typewriter-effect'
-const Header = (page) => {
+const Hero = (page) => {
   return (
     <>
-      <header className='first'>
+      <section className='hero'>
         <div className='mx-auto h-full flex justify-center items-center md:relative'>
           <main className='dub-col-wrapper'>
             <div className='textDiv w-full mx-auto'>
@@ -41,10 +41,9 @@ const Header = (page) => {
                 <button className='btn btn-primary'>Say Hi</button>
               </div>
             </div>
-            <div></div>
             <Image
               src={bitty}
-              className=' mx-auto w-full md:w-[350px] md:h-[350px]'
+              className=' mx-auto w-[250px] h-[250px] sl:w-[300px] sl:h-[300px] md:w-[350px] md:h-[350px]'
             />
             <div className='social__links'>
               <a
@@ -65,9 +64,9 @@ const Header = (page) => {
             </a>
           </main>
         </div>
-      </header>
+      </section>
     </>
   )
 }
 
-export default Header
+export default Hero
