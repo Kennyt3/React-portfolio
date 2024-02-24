@@ -40,7 +40,7 @@ const Contact = (page) => {
     <>
       <section id='contact' className='contact'>
         <div className='mx-auto md:mt-0 h-full xl:relative'>
-          <div className='doro cne flex flex-col gap-5 pt-1 h-full'>
+          <div className='doro cne  md:grid md:pt-0 flex flex-col gap-5 pt-1 h-full'>
             {/* <h3 className='text-center text-[#4db5ff]'>
               Contact Me
             </h3> */}
