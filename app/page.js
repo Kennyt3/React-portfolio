@@ -1,25 +1,14 @@
 'use client'
-require('dotenv').config()
-import Image from 'next/image'
-import Hero from '@/components/hero'
-import About from '@/components/about'
-import Nav from '@/components/nav'
-import Resume from '@/components/resume'
-import Contact from '@/components/contact'
-import Portfolio from '@/components/portfolio'
+
+import React from 'react'
+import { useContextValue } from '@/context/userContext'
 export default function Home() {
+  const { colorTheme } = useContextValue()
   return (
-    <>
-      <div className='homePage'>
-        <main>
-          <Hero />
-          <About />
-          <Resume />
-          <Portfolio />
-          <Contact />
-          <Nav />
-        </main>
-      </div>
-    </>
+    <div className={`${colorTheme === 'dark' ? 'bg-dark' : 'bg-light'}`}>
+      <section className=''>
+
+      </section>
+    </div>
   )
 }

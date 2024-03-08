@@ -1,5 +1,5 @@
-import './globals.css'
-
+import './global.css'
+import UserProvider from '@/context/userContext'
 export async function generateMetadata() {
   const metadata = {
     title: 'Mercy Taiwo - Software Developer | Technical Writer ',
@@ -33,7 +33,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head />
-      <body>{children}</body>
+      <body>
+        {' '}
+        <UserProvider>{children}</UserProvider>
+      </body>
     </html>
   )
 }
