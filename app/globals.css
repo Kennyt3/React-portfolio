@@ -367,9 +367,19 @@ textarea::placeholder {
   font-weight: 300;
   font-size: 0.9rem;
 }
+.scrollarrow {
+  position: absolute;
+  right: -1.3rem;
+  bottom: 5rem;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
 @media screen and (max-width: 1200px) {
   .social__links,
   .scroll {
+    display: none;
+  }
+  .scrollarrow {
     display: none;
   }
 }

@@ -4,6 +4,7 @@ import { FaLinkedin, FaXTwitter, FaWhatsapp } from 'react-icons/fa6'
 import { FaGithub } from 'react-icons/fa'
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { FaArrowUpLong } from 'react-icons/fa6'
 
 const Contact = (page) => {
   const [name, setName] = useState('')
@@ -151,8 +152,8 @@ const Contact = (page) => {
               <FaGithub style={{ color: '#4db5ff', fontSize: '1.5em' }} />
             </a>
           </div>
-          <a href='#contact' class='scroll'>
-            Contact Me
+          <a href='#' class='scrollarrow'>
+            <FaArrowUpLong />
           </a>
         </div>
       </section>
