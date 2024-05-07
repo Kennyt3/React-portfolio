@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
     extend: {
       backgroundImage: {
@@ -19,8 +20,19 @@ module.exports = {
         dl: '400px',
         pl: '900px',
         xl: '1200px',
+        xsm: '375px',
+        slg: '870px',
+        xlg: '1250px',
       },
-
+      backgroundSize: {
+        auto: 'auto',
+        cover: 'cover',
+        contain: 'contain',
+        '200%': '200% auto',
+      },
+      backgroundPosition: {
+        'right-center': 'right center',
+      },
       colors: {
         bgHeader: '#2C3E50',
         bgPrimary: '#F8F8F8',
