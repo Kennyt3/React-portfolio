@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <section className='bg-color'>
       <Header />
-
-      <h1>HHHH</h1>
     </section>
   )
 }
