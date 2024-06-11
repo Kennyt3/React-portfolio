@@ -4,10 +4,9 @@ import { useState } from 'react'
 import logo from '@/public/img/logo12.png'
 import Link from 'next/link'
 export const NavLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#about', label: 'About', num: '00.' },
+  { href: '#projects', label: 'Projects', num: '01.' },
+  { href: '#contact', label: 'Contact', num: '02.' },
 ]
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
@@ -26,10 +25,11 @@ const Nav = () => {
       </div>
       <ul className='flex-1 flex justify-center items-center gap-20 max-lg:hidden'>
         {NavLinks.map((item) => (
-          <li key={item.label} className='nav-links'>
+          <li className='w-[9rem] flex items-end gap-1 font-semibold '>
+            <span className=' text-gray-600  text-[16px]  '>{item.num}</span>
             <a
+              className='nav-links font-montserrat leading-normal text-lg text-slate-gray'
               href={item.href}
-              className='font-montserrat leading-normal text-lg text-slate-gray'
             >
               {item.label}
             </a>
@@ -37,7 +37,6 @@ const Nav = () => {
         ))}
       </ul>
     </nav>
-    // <nav class='max-h-[10vh] max-w-[144rem] mx-auto p-4 py-3 border-b-1 border-blue-500 border-opacity-20 flex items-center justify-between'></nav>
   )
 }
 
