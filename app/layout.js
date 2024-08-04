@@ -71,40 +71,12 @@ export const metadata = {
     images: ['https://mercy-taiwo.vercel.app/img/mercy_taiwo'],
   },
 }
-// export async function generateMetadata() {
-//   const metadata = {
-//     title: 'Mercy Taiwo - Software Developer | Technical Writer ',
-//     meta: 'I am a software developer based in Lagos, Nigeria and available to work remotely in other countries. My tech stack includes Javascript, React js, Next js, Express js, Node js, Mongo db and Graph QL',
-//     url: 'https://mercy-taiwo.vercel.app/',
-//     img: 'https://mercy-taiwo.vercel.app/img/mercy_taiwo.jpg',
-//   }
-//   return {
-//     title: metadata.title,
-//     description: metadata.meta,
-//     metadataBase: new URL('https://mercy-taiwo.vercel.app/'),
-//     openGraph: {
-//       title: metadata.title,
-//       description: metadata.meta,
-//       type: 'article',
-//       url: metadata.url,
-//       images: [
-//         {
-//           url: metadata.img,
-//           width: 800,
-//           height: 600,
-//         },
-//       ],
-//       locale: 'en',
-//       type: 'website',
-//     },
-//   }
-// }
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head />
-      <body>
+      <body className='bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900'>
         <UserProvider>{children}</UserProvider>
       </body>
     </html>

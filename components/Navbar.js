@@ -24,8 +24,11 @@ const Nav = () => {
         </Link>
       </div>
       <ul className='flex-1 flex justify-center items-center gap-20 max-lg:hidden'>
-        {NavLinks.map((item) => (
-          <li className='w-[9rem] flex items-end gap-1 font-semibold '>
+        {NavLinks.map((item, index) => (
+          <li
+            className='w-[9rem] flex items-end gap-1 font-semibold'
+            key={index}
+          >
             <span className=' text-gray-600  text-[16px]  '>{item.num}</span>
             <a
               className='nav-links font-montserrat leading-normal text-lg text-slate-gray'

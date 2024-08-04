@@ -42,8 +42,9 @@ html {
 }
 
 body {
-  color: rgba(204, 214, 246, 1);
-  background: rgba(34, 40, 49, 1);
+  /* color: rgba(204, 214, 246, 1); */
+  /* background: rgba(34, 40, 49, 1); */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   /* color: rgba(34, 40, 49, 1); */
 }
 *,

@@ -17,7 +17,7 @@ const Contact = (page) => {
     emailjs
       .sendForm(
         'service_qgo4bdj',
-        'template_fwqvohd',
+        'contact_form',
         form.current,
         'cRQmou1HpEeCnEv5T'
         // process.env.EMAIL_SERVICE,
