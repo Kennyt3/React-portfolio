@@ -1,6 +1,6 @@
 import './global.css'
 import UserProvider from '@/context/userContext'
-
+import ThemeProvider from '@/context/themeContext'
 export const metadata = {
   title: 'Mercy Taiwo - Portfolio',
   description:
@@ -74,11 +74,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
-      <head />
-      <body className='bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900'>
-        <UserProvider>{children}</UserProvider>
-      </body>
-    </html>
+    <ThemeProvider>
+      <html lang='en'>
+        <head />
+        <body className=' leading-relaxed'>
+          <UserProvider>{children}</UserProvider>
+        </body>
+      </html>
+    </ThemeProvider>
   )
 }
