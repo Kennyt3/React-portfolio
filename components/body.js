@@ -6,6 +6,7 @@ import { FaInstagram } from 'react-icons/fa6'
 import Header from './Header'
 import About from './about'
 import Experience from './experience'
+import Projects from './projects'
 export const navItem = [
   { name: 'ABOUT', id: 'about' },
   { name: 'EXPERIENCE', id: 'experience' },
@@ -154,6 +155,7 @@ const Body = () => {
           <main id='content' className='pt-24 lg:w-1/2 lg:py-24'>
             <About />
             <Experience />
+            <Projects />
           </main>
         </div>
       </div>
