@@ -592,3 +592,70 @@
 // }
 
 // export default Body
+
+//  <div>
+//    <p className='mb-4'>
+//      My journey into software development began with a deep-seated love for
+//      logic and problem-solving. After the economic challenges brought on by
+//      COVID-19, as an undergraduate law student facing financial constraints, I
+//      sought a marketable skill to support myself until I could obtain my BL
+//      certificate. Software development emerged as the perfect fit, allowing me
+//      to harness my logical thinking to create impactful solutions.
+//    </p>
+//    <p className='mb-4'>
+//      I began learning software development on my own, driven by a passion for
+//      logic and a desire to build a financially independent future. This
+//      self-taught foundation was further enriched through my participation in the{' '}
+//      <a
+//        href='https://www.womentechsters.org/programs'
+//        target='_blank'
+//        className='links underline'
+//      >
+//        Women Techsters Fellowship
+//      </a>{' '}
+//      , a prestigious program sponsored by Microsoft, where I graduated summa cum
+//      laude and was honored as the{' '}
+//      <a
+//        href='https://www.facebook.com/Tech4DevHQ/posts/pfbid02422fw1MYCNjGws289WfWmJa87YNjtsjPS5zvaXcEAubqEjtXmw9ZMjTXa4aM9xhNl'
+//        className='links underline'
+//        target='_blank'
+//      >
+//        Best Graduating Student
+//      </a>{' '}
+//      in my learning track.
+//    </p>
+//    <p className='mb-4'>
+//      Since then, I have expanded my skills to include backend development, both
+//      through self-study and under the guidance of a mentor. This has allowed me
+//      to handle a broader range of projects and deepen my expertise in creating
+//      comprehensive web solutions.
+//    </p>
+//    <p className='mb-4'>
+//      Professionally, I have single-handedly built{' '}
+//      <a href='https://beesage.co/' className='links underline' target='_blank'>
+//        Beesage&apos;s
+//      </a>{' '}
+//      webshop, integrating the Stripe API and a blog CMS tool. Additionally, I've
+//      developed various websites for clients, including{' '}
+//      <a
+//        href='https://cokeandfanta.vercel.app/'
+//        className='links underline'
+//        target='_blank'
+//      >
+//        custom wedding sites
+//      </a>{' '}
+//      and other unique projects.
+//    </p>
+//    <p className='mb-4'>
+//      Beyond my professional work, I am a strong advocate for gender equality and
+//      empowering young girls with digital skills. I've volunteered in various
+//      capacities to support this cause and am passionate about helping others
+//      achieve financial independence through technology.
+//    </p>
+//    <p className='mb-4'>
+//      In my free time, I enjoy reading fiction and watching TV shows, which offer
+//      a creative escape and further inspire my work. I am excited to bring my
+//      expertise, passion, and unique perspective to your project. Let&apos;s
+//      create something exceptional together!
+//    </p>
+//  </div>
