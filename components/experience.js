@@ -77,7 +77,7 @@ const Experience = () => {
           ))}
           <div class='mt-12'>
             <a
-              class='inline-flex items-baseline leading-tight  hover:text-textPrimary focus-visible:text-textPrimary group/link text-base'
+              class='inline-flex items-baseline leading-tight  hover:text-textPrimary focus-visible:text-textPrimary group/link text-base font-semibold'
               href='/resume.pdf'
               target='_blank'
               rel='noreferrer noopener'

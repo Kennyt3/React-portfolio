@@ -98,8 +98,8 @@ const Body = () => {
                 Frontend Engineer
               </h2>
               <p className='mt-4 max-w-xs leading-normal'>
-                I excel at crafting digital experiences that fuel business
-                growth and captivate target audience.
+                I create digital experiences that fuel business growth and
+                captivate target audience.
               </p>
               <nav
                 className='nav hidden lg:block'
