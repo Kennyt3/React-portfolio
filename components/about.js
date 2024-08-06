@@ -27,7 +27,11 @@ const About = () => {
           </a>{' '}
           , a prestigious program sponsored by Microsoft, where I graduated
           summa cum laude and was honored as the{' '}
-          <a href='' className='links underline' target='_blank'>
+          <a
+            href='https://www.facebook.com/Tech4DevHQ/posts/pfbid02422fw1MYCNjGws289WfWmJa87YNjtsjPS5zvaXcEAubqEjtXmw9ZMjTXa4aM9xhNl'
+            className='links underline'
+            target='_blank'
+          >
             Best Graduating Student
           </a>{' '}
           in my learning track, highlighting my dedication to mastering new
@@ -41,7 +45,7 @@ const About = () => {
             className='links underline'
             target='_blank'
           >
-            Beesage&apos;s
+            Beesage&apos; s
           </a>{' '}
           current webshop, integrating the Stripe API and a blog CMS tool.
           Additionally, I&apos;ve developed various websites for clients,
