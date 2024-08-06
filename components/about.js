@@ -35,17 +35,17 @@ const About = () => {
           certification courses as well as participated in a mentorship program
         </p>
         <p className='mb-4'>
-          Professionally, I've single-handedly built{' '}
+          Professionally, I&apos;ve single-handedly built{' '}
           <a
             href='https://beesage.co/'
             className='links underline'
             target='_blank'
           >
-            Beesage's
+            Beesage&apos;s
           </a>{' '}
           current webshop, integrating the Stripe API and a blog CMS tool.
-          Additionally, I've developed various websites for clients, including
-          custom wedding websites and other unique projects.
+          Additionally, I&apos;ve developed various websites for clients,
+          including custom wedding websites and other unique projects.
         </p>
       </div>
     </section>
