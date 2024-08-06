@@ -30,8 +30,8 @@ export const icon = [
   },
   {
     icon: <FaInstagram className='icon' size={24} />,
-    name: 'Message',
-    link: 'https://www.linkedin.com/in/mercy-taiwo-002b26131',
+    name: 'Instagram',
+    link: 'https://www.instagram.com/taiwomercykehinde/',
   },
 ]
 
