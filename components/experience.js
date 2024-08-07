@@ -3,7 +3,7 @@ const Experience = () => {
   return (
     <section
       id='experience'
-      class='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'
+      class='mb-16  md:mb-24 lg:mb-36'
       aria-label='Work experience'
     >
       <div class=''>
@@ -16,7 +16,7 @@ const Experience = () => {
           {experience.map((item, index) => (
             <li class='my-12' key={index}>
               <div class='group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 group-hover:!opacity-100 group-hover/list:opacity-50'>
-                <div class='absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block group-hover:bg-[#5c6c8580]'></div>
+                <div class='absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block group-hover:bg-shadow'></div>
                 <header
                   class='z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-textPrimary group-hover:text-accentPrimary sm:col-span-2'
                   aria-label={item.aria}

@@ -10,7 +10,7 @@ import Projects from './projects'
 export const navItem = [
   { name: 'ABOUT', id: 'about' },
   { name: 'EXPERIENCE', id: 'experience' },
-  { name: 'PROJECTS', id: 'project' },
+  { name: 'PROJECTS', id: 'projects' },
 ]
 
 export const icon = [
@@ -38,28 +38,30 @@ export const icon = [
 
 const Body = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const [activeId, setActiveId] = useState('about')
-
-  const handleSetActiveId = (id) => {
-    setActiveId(id)
-  }
+  const [activeId, setActiveId] = useState('')
+  const [selectedId, setSelectedId] = useState('')
 
   useEffect(() => {
+    setSelectedId('about')
+  }, [])
+  useEffect(() => {
+    if (activeId === 'home') {
+      setSelectedId('about')
+    }
+  }, [activeId])
+  useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY
-      navItem.forEach((item) => {
-        const element = document.getElementById(item.id)
-        if (element) {
-          const offsetTop = element.offsetTop
-          const offsetHeight = element.offsetHeight
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveId(item.id)
-          }
+      const sections = document.querySelectorAll('section')
+      let current = ''
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop
+        if (window.pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute('id')
         }
       })
+      setSelectedId('')
+      setActiveId(current)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -112,16 +114,20 @@ const Body = () => {
                       <a
                         className='group flex items-center py-3'
                         href={`#${item.id}`}
-                        onClick={() => handleSetActiveId(item.id)}
+                        onClick={() => setSelectedId(item.id)}
                       >
                         <span
-                          className={`nav-indicator  mr-4 h-px w-8 bg-accentPrimary transition-all group-hover:w-16 group-hover:bg-textPrimary group-focus-visible:w-16 group-focus-visible:bg-textPrimary motion-reduce:transition-none ${
-                            activeId === item.id && 'w-16 bg-textPrimary'
+                          className={`nav-indicator  mr-4 h-px w-10 bg-accentPrimary transition-all group-hover:w-20 group-hover:bg-textPrimary group-focus-visible:w-20 group-focus-visible:bg-textPrimary motion-reduce:transition-none ${
+                            activeId === item.id || selectedId === item.id
+                              ? 'bg-textPrimary w-20'
+                              : ''
                           }`}
                         ></span>
                         <span
                           className={`nav-text text-xs font-bold uppercase tracking-widest  group-hover:text-textPrimary group-focus-visible:text-textPrimary ${
-                            activeId === item.id && 'text-textPrimary'
+                            activeId === item.id || selectedId === item.id
+                              ? 'text-textPrimary'
+                              : ''
                           }`}
                         >
                           {item.name}

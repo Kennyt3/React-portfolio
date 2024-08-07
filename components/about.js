@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id='about'
-      className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'
+      className='mb-16 md:mb-24 lg:mb-36 '
       aria-label='About me'
     >
       <div className='mb-4 py-5 backdrop-blur md:-mx-12 md:px-12'>

@@ -35,6 +35,9 @@ module.exports = {
       colors: {
         textPrimary: 'var(--primary-color)',
         accentPrimary: 'var(--accent-color)',
+        borderPrimary: 'var(--border-color)',
+        borderHover: 'var(--border-hover)',
+        shadow: 'var(--shadow)',
         accentSecondary: { light: '#3498DB' },
       },
     },

@@ -71,15 +71,23 @@ body {
   --background-color: #ffffff; /* Light Gray */
   --text-color: #31414b; /* Dark Blue Gray */
   --accent-color: #e74c3c; /* Red */
+  --border-color: #5c6c8580;
+  --border-color: #9b59b6;
   --nav-height: 100px;
+  --border-hover: #e74c3c;
   --mobile-header: #fffffff7;
+  --shadow: #5c6c8580;
+  --shadow: #828fa480;
   --mobile-header-shadow: #00000008 0px 12px 32px 0px;
 }
 
 [data-theme='dark'] {
   --primary-color: #1abc9c;
   --secondary-color: #e67e22;
+  --border-color: #1abc9c;
+  --border-hover: #e74c3c;
   --background-color: #2c3e50;
+  --shadow: #5c6c8580;
   --text-color: #ecf0f1;
   --accent-color: #e74c3c;
   --mobile-header: #2c3e50f7;
