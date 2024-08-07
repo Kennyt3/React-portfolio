@@ -45,15 +45,9 @@ const Body = () => {
     setSelectedId('about')
   }, [])
   useEffect(() => {
-    if (activeId === 'home') {
-      setSelectedId('about')
-    }
-  }, [activeId])
-  useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section')
       let current = ''
-
       sections.forEach((section) => {
         const sectionTop = section.offsetTop
         if (window.pageYOffset >= sectionTop - 60) {
@@ -93,7 +87,7 @@ const Body = () => {
           >
             <div>
               <h1 className='text-4xl font-bold tracking-tight  sm:text-5xl'>
-                <a href='/' className='headingText'>
+                <a href='#' className='headingText'>
                   Mercy K. Taiwo
                 </a>
               </h1>
@@ -121,11 +115,19 @@ const Body = () => {
                             activeId === item.id || selectedId === item.id
                               ? 'bg-textPrimary w-20'
                               : ''
+                          }  ${
+                            item.id === 'about' && activeId === 'home'
+                              ? 'bg-textPrimary w-20'
+                              : ''
                           }`}
                         ></span>
                         <span
                           className={`nav-text text-xs font-bold uppercase tracking-widest  group-hover:text-textPrimary group-focus-visible:text-textPrimary ${
                             activeId === item.id || selectedId === item.id
+                              ? 'text-textPrimary'
+                              : ''
+                          } ${
+                            item.id === 'about' && activeId === 'home'
                               ? 'text-textPrimary'
                               : ''
                           }`}

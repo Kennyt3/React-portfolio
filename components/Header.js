@@ -8,7 +8,7 @@ const Header = () => {
     <header className='header'>
       <nav>
         <div className='nav_logo' tabindex='-1'>
-          <a href='/' aria-label='home' className='cursor-pointer'>
+          <a href='#' aria-label='home' className='cursor-pointer'>
             <div className='hexagon '>
               <svg
                 id='hex'
