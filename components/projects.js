@@ -14,7 +14,7 @@ const Projects = () => {
       <div>
         <ul class='group/list'>
           {projects.map((item, index) => (
-            <li class='my-12'>
+            <li class='my-12' key={index}>
               <div class='group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100'>
                 <div class='absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block group-hover:bg-shadow'></div>
                 <div class='z-10 sm:order-2 sm:col-span-6'>

@@ -42,7 +42,7 @@ const About = () => {
             Beesage&apos;s
           </a>{' '}
           webshop, integrating the Stripe API and a blog CMS tool. Additionally,
-          I've developed various websites for clients, including{' '}
+          I&apos;ve developed various websites for clients, including{' '}
           <a
             href='https://cokeandfanta.vercel.app/'
             className='links underline'
