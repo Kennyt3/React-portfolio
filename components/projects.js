@@ -20,7 +20,7 @@ const Projects = () => {
                   <h3 class='font-medium leading-snug'>
                     <a
                       class='inline-flex items-baseline font-medium leading-tight text-accentPrimary group-hover:text-textPrimary focus-visible:text-teal-300  group/link text-base'
-                      href='https://www.newline.co/courses/build-a-spotify-connected-app'
+                      href={item.link}
                       target='_blank'
                       rel='noreferrer noopener'
                       aria-label={item.details}

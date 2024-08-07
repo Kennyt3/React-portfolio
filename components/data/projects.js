@@ -14,7 +14,7 @@ export const projects = [
     details:
       'WrytIt is a comprehensive blog CMS tool designed to simplify the process of creating, managing, and publishing blog content. Built with user-friendly features and robust backend capabilities, WrytIt empowers bloggers and content creators to efficiently manage their blogs without needing extensive technical knowledge.',
     tools: ['Next js', 'React', 'Node Js'],
-    live: 'https://wryt-it.vercel.app/',
+    link: 'https://wryt-it.vercel.app/',
     github: 'https://github.com/Kennyt3/WrytIt',
     aos: 'fade-up',
   },
@@ -25,7 +25,7 @@ export const projects = [
     details:
       'A web quiz application built using Reactjs, tailwindcss, and quiz api',
     tools: ['Next js', 'React', 'Node Js'],
-    live: 'https://quizzardapp.netlify.app/',
+    link: 'https://quizzardapp.netlify.app/',
     github: 'https://github.com/Kennyt3/Quizzard',
     aos: 'fade-up-left',
   },
@@ -35,7 +35,7 @@ export const projects = [
     pic: '/img/image2.png',
     details:
       'A random joke telling web app built using Reactjs tailwindcss, web speech api, official jokes api',
-    live: 'https://jokesbot.netlify.app/',
+    link: 'https://jokesbot.netlify.app/',
     github: 'https://github.com/Kennyt3/jokesbot',
     aos: 'fade-up-right',
   },
@@ -45,7 +45,7 @@ export const projects = [
     pic: '/img/image3.png',
     details:
       'A web application used to do basic mathematical calculations, built using React, Tailwind and Javascript',
-    live: 'https://tmkcalculator.netlify.app/',
+    link: 'https://tmkcalculator.netlify.app/',
     github: 'https://github.com/Kennyt3/Calculator',
     aos: 'fade-up',
   },
@@ -55,7 +55,7 @@ export const projects = [
     pic: '/img/image4.png',
     details:
       'A fashion ecommerce app built using React, Tailwind and Javascript',
-    live: 'https://bomafashion.netlify.app/',
+    link: 'https://bomafashion.netlify.app/',
     github: 'https://github.com/Kennyt3/BOMA',
     aos: 'fade-right',
   },
@@ -65,7 +65,7 @@ export const projects = [
     pic: '/img/image5.png',
     details:
       'A review web application, to submit reviews on services built using Reactjs aand styled components',
-    live: 'https://teamkernel.netlify.app/',
+    link: 'https://teamkernel.netlify.app/',
     github: 'https://github.com/Kennyt3/TeamKernel',
     aos: 'fade-down-left',
   },
@@ -75,7 +75,7 @@ export const projects = [
     pic: '/img/image6.png',
     details:
       'A To-do web application for creating to do lists, built using Html, CSS and Javascript',
-    live: 'https://mercystodo.netlify.app/',
+    link: 'https://mercystodo.netlify.app/',
     github: 'https://github.com/Kennyt3/Icecream',
     aos: 'fade-down-right',
   },
