@@ -48,7 +48,7 @@ const About = () => {
             className='links underline'
             target='_blank'
           >
-            custom wedding sites
+            bespoke wedding sites
           </a>{' '}
           and other unique projects.
         </p>

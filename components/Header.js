@@ -2,6 +2,7 @@ import React from 'react'
 import { useThemeContext } from '@/context/themeContext'
 import { FiSun } from 'react-icons/fi'
 import { FiMoon } from 'react-icons/fi'
+import { BsHexagon } from 'react-icons/bs'
 const Header = () => {
   const { toggleTheme, theme } = useThemeContext()
   return (

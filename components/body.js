@@ -7,10 +7,12 @@ import Header from './Header'
 import About from './about'
 import Experience from './experience'
 import Projects from './projects'
+import Contact from './contact'
 export const navItem = [
   { name: 'ABOUT', id: 'about' },
   { name: 'EXPERIENCE', id: 'experience' },
   { name: 'PROJECTS', id: 'projects' },
+  { name: 'CONTACT', id: 'contact' },
 ]
 
 export const icon = [
@@ -164,6 +166,7 @@ const Body = () => {
             <About />
             <Experience />
             <Projects />
+            {/* <Contact /> */}
           </main>
         </div>
       </div>

@@ -3,7 +3,31 @@ import { FaFacebookMessenger } from 'react-icons/fa6'
 import { FaLinkedin, FaXTwitter, FaWhatsapp } from 'react-icons/fa6'
 import { FaGithub } from 'react-icons/fa'
 import { useState, useRef } from 'react'
+import { FaInstagram } from 'react-icons/fa6'
 import emailjs from '@emailjs/browser'
+
+export const icon = [
+  {
+    icon: <FaGithub className='icon' size={20} />,
+    name: 'Github',
+    link: 'https://github.com/Kennyt3',
+  },
+  {
+    icon: <FaLinkedin className='icon' size={24} />,
+    name: 'Linkedin',
+    link: 'https://www.linkedin.com/in/mercy-taiwo-002b26131',
+  },
+  {
+    icon: <FaXTwitter className='icon' size={24} />,
+    name: 'Twitter',
+    link: 'https://twitter.com/mercyWritesCode',
+  },
+  {
+    icon: <FaInstagram className='icon' size={24} />,
+    name: 'Instagram',
+    link: 'https://www.instagram.com/taiwomercykehinde/',
+  },
+]
 
 const Contact = (page) => {
   const [name, setName] = useState('')
@@ -38,7 +62,11 @@ const Contact = (page) => {
 
   return (
     <>
-      <section id='contact' className='contact'>
+      <section
+        id='contact'
+        class='mb-16  md:mb-24 lg:mb-36'
+        aria-label='Contact'
+      >
         <div className='mx-auto md:mt-0 h-full xl:relative'>
           <div className='doro cne  md:grid md:pt-0 flex flex-col gap-5 pt-1 h-full'>
             {/* <h3 className='text-center text-[#4db5ff]'>
@@ -137,20 +165,46 @@ const Contact = (page) => {
               </div>
             </div>
           </div>
-          <div className='social__links'>
+          {/* <div className='social__links'>
             <a
               href='https://www.linkedin.com/in/mercy-taiwo-002b26131'
               target='_blank'
+              className='block links'
             >
-              <FaLinkedin style={{ color: '#4db5ff', fontSize: '1.5em' }} />
+              <FaLinkedin className='icon' size={20} />
             </a>
-            <a href='https://twitter.com/mercyWritesCode' target='_blank'>
-              <FaXTwitter style={{ color: '#4db5ff', fontSize: '1.5em' }} />
+            <a
+              href='https://twitter.com/mercyWritesCode'
+              target='_blank'
+              className='block links'
+            >
+              <FaXTwitter className='icon' size={20} />
             </a>
-            <a href='https://github.com/Kennyt3' target='_blank'>
-              <FaGithub style={{ color: '#4db5ff', fontSize: '1.5em' }} />
+            <a
+              href='https://github.com/Kennyt3'
+              target='_blank'
+              className='block links'
+            >
+              <FaGithub className='icon' size={20} />
             </a>
-          </div>
+            
+          </div> */}
+          <ul className='ml-1 mt-8 flex items-center' aria-label='Social media'>
+            {icon.map((item, index) => (
+              <li key={index} className='mr-5 text-xs shrink-0'>
+                <a
+                  className='block links'
+                  href={item.link}
+                  target='_blank'
+                  rel='noreferrer noopener'
+                  aria-label='Goodreads (opens in a new tab)'
+                  title={item.name}
+                >
+                  {item.icon}
+                </a>
+              </li>
+            ))}
+          </ul>
           <a href='#contact' class='scroll'>
             Contact Me
           </a>
