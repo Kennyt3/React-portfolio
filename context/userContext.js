@@ -1,11 +1,13 @@
+'use client'
 import { useState, useContext, createContext, useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 export const UserContext = createContext({})
 
 const UserProvider = ({ children }) => {
   const [userInfo, setUserInfo] = useState({})
   const [showMenu, setShowMenu] = useState(false)
   const [token, setToken] = useState('')
+  const [colorTheme, setColorTheme] = useState('light')
   const [loggedIn, setLoggedIn] = useState(false)
   const [content, setContent] = useState('')
   const router = useRouter()
@@ -44,6 +46,8 @@ const UserProvider = ({ children }) => {
         setContent,
         token,
         setToken,
+        colorTheme,
+        setColorTheme,
       }}
     >
       {children}

@@ -1,76 +1,66 @@
-import Image from 'next/image'
-import Meme from '@/public/img/circle.jpg'
-import { FaLinkedin, FaXTwitter } from 'react-icons/fa6'
-import { FaGithub } from 'react-icons/fa'
-const Header = (page) => {
+const About = () => {
   return (
-    <>
-      <section id='about' className='about'>
-        <div className='mx-auto h-full md:flex justify-center items-center xl:relative'>
-          <div className='doro cne md:grid h-full'>
-            <div className='flex flex-col gap-3 md:gap-10 md:block mt-10 md:mt-0 pt-1 md:pt-0'>
-              <h2 className='text-center text-[#4db5ff]'>About Me</h2>
-              <div className='xl:w-[60vw] mx-auto grid gap-2 md:gap-0  md:flex md:justify-between md:items-center'>
-                <div className='image-div'>
-                  <Image
-                    src={Meme}
-                    width={500}
-                    height={500}
-                    className='rounded-[50%] w-[200px] h-[200px]  sl:w-[300px] sl:h-[300px] mx-auto'
-                  ></Image>
-                </div>
-                <div className='text-div px-[16px]'>
-                  <p className=''>
-                    <span className='list-disc list-item'>
-                      My name is Mercy Kehinde Taiwo.
-                    </span>
-
-                    <span className='list-disc list-item'>
-                      I am a Full stack web developer.
-                    </span>
-                    <span className='list-disc list-item'>
-                      I hold a bachelor&apos;s degree in Law from Obafemi
-                      Awolowo University
-                    </span>
-                    <span className='list-disc list-item'>
-                      I graduated top of my class from the Women Techsters
-                      Fellowship class of &lsquo;24.
-                    </span>
-                    <span className='list-disc list-item'>
-                      I am Cynophobic, and although I think dogs are cute, I get
-                      terrified whenever there is one close to me.
-                    </span>
-                    <span className='list-disc list-item'>
-                      My favorite pastime typically involves watching a
-                      compelling TV drama, accompanied by a snack, and a healthy
-                      beverage.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='social__links'>
-            <a
-              href='https://www.linkedin.com/in/mercy-taiwo-002b26131'
-              target='_blank'
-            >
-              <FaLinkedin style={{ color: '#4db5ff', fontSize: '1.5em' }} />
-            </a>
-            <a href='https://twitter.com/mercyWritesCode' target='_blank'>
-              <FaXTwitter style={{ color: '#4db5ff', fontSize: '1.5em' }} />
-            </a>
-            <a href='https://github.com/Kennyt3' target='_blank'>
-              <FaGithub style={{ color: '#4db5ff', fontSize: '1.5em' }} />
-            </a>
-          </div>
-          <a href='#contact' class='scroll'>
-            Contact Me
-          </a>
-        </div>
-      </section>
-    </>
+    <section
+      id='about'
+      className='mb-16 md:mb-24 lg:mb-36 '
+      aria-label='About me'
+    >
+      <div className='mb-4 py-5 backdrop-blur md:-mx-12 md:px-12'>
+        <h2 className='text-sm font-bold uppercase tracking-widest  '>About</h2>
+      </div>
+      <div>
+        <p className='mb-4'>
+          My love for logic and problem-solving led me to software development
+          during the economic challenges occasioned by the COVID-19, while I was
+          an undergraduate law student. Seeking financial independence, I began
+          learning on my own and later joined the{' '}
+          <a
+            href='https://www.womentechsters.org/programs'
+            target='_blank'
+            className='links underline'
+          >
+            Women Techsters Fellowship
+          </a>{' '}
+          where I graduated summa cum laude and as the{' '}
+          <a
+            href='https://www.facebook.com/Tech4DevHQ/posts/pfbid02422fw1MYCNjGws289WfWmJa87YNjtsjPS5zvaXcEAubqEjtXmw9ZMjTXa4aM9xhNl'
+            className='links underline'
+            target='_blank'
+          >
+            Best Graduating Student
+          </a>{' '}
+          in my learning track.
+        </p>
+        <p className='mb-4'>
+          I’ve since expanded my skills to include backend development, both
+          through self-study and mentorship. Professionally, I built{' '}
+          <a
+            href='https://beesage.co/'
+            className='links underline'
+            target='_blank'
+          >
+            Beesage&apos;s
+          </a>{' '}
+          webshop, integrating the Stripe API and a blog CMS tool. Additionally,
+          I&apos;ve developed various websites for clients, including{' '}
+          <a
+            href='https://cokeandfanta.vercel.app/'
+            className='links underline'
+            target='_blank'
+          >
+            bespoke wedding sites
+          </a>{' '}
+          and other unique projects.
+        </p>
+        <p className='mb-4'>
+          I am passionate about gender equality and empowering young girls with
+          digital skills, and I volunteer to support this cause. In my free
+          time, I enjoy reading fiction and watching TV shows. Let’s create
+          something exceptional together!
+        </p>
+      </div>
+    </section>
   )
 }
 
-export default Header
+export default About
