@@ -41,7 +41,6 @@ const Projects = () => {
                   </h3>
                   <p class='mt-2 text-sm leading-normal'>{item.details}</p>
                 </div>
-
                 <img
                   alt={item.name}
                   loading='lazy'
