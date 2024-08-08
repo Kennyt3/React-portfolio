@@ -166,7 +166,7 @@ const Body = () => {
             <About />
             <Experience />
             <Projects />
-            {/* <Contact /> */}
+            <Contact />
           </main>
         </div>
       </div>

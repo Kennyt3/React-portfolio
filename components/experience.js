@@ -7,7 +7,7 @@ const Experience = () => {
       class='mb-16  md:mb-24 lg:mb-36'
       aria-label='Work experience'
     >
-      <div class=''>
+      <div class='mb-4 py-5 backdrop-blur md:-mx-12 md:px-12'>
         <h2 class='text-sm font-bold uppercase tracking-widest  '>
           Experience
         </h2>
