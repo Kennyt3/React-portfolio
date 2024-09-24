@@ -87,7 +87,7 @@ const Body = () => {
       <Header />
       {showMenu ? (
         <div className='md:hidden mx-auto min-h-screen max-w-screen-xl  pt-28 font-sans'>
-          <div className='flex flex-col ma justify-center'>
+          <div className='flex flex-col  justify-center'>
             <ul className='mt-16'>
               {navItem.map((item, index) => (
                 <li
