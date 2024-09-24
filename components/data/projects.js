@@ -4,7 +4,8 @@ export const projects = [
     name: 'WrytIt',
     pic: '/img/image7.png',
     details:
-      'WrytIt is a comprehensive blog CMS tool designed to simplify the process of creating, managing, and publishing blog content. Built with user-friendly features and robust backend capabilities, WrytIt empowers bloggers and content creators to efficiently manage their blogs without needing extensive technical knowledge.',
+      'WrytIt is a comprehensive blog CMS tool designed to simplify the process of creating, managing, and publishing blog content.',
+    // Built with user-friendly features and robust backend capabilities, WrytIt empowers bloggers and content creators to efficiently manage their blogs without needing extensive technical knowledge.
     tools: ['Next js', 'React', 'Node Js'],
     link: 'https://wryt-it.vercel.app/',
     github: 'https://github.com/Kennyt3/WrytIt',
@@ -15,7 +16,8 @@ export const projects = [
     name: 'CokeandFanta',
     pic: '/img/image8.png',
     details:
-      "This project involved creating a bespoke wedding website for a client, tailored to reflect the unique style and story of the couple. The website serves as a central hub for all wedding-related information, providing guests with a seamless and elegant user experience while ensuring easy management of event details. Guests can view beautiful pictures and explore the couple's wishlist, making the entire wedding experience more interactive and enjoyable.",
+      'This project involved creating a bespoke wedding website for a client, tailored to reflect the unique style and story of the couple.',
+    // The website serves as a central hub for all wedding-related information, providing guests with a seamless and elegant user experience while ensuring easy management of event details. Guests can view beautiful pictures and explore the couple's wishlist, making the entire wedding experience more interactive and enjoyable.
     tools: ['Next js', 'React', 'Node Js'],
     link: 'https://wryt-it.vercel.app/',
     github: 'https://github.com/Kennyt3/WrytIt',

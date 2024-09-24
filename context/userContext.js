@@ -16,7 +16,7 @@ const UserProvider = ({ children }) => {
     setLoggedIn(false)
     router.push('/logout')
   }
-  const toggleScroll = () => {
+  const toggleMenu = () => {
     setShowMenu(!showMenu)
   }
   useEffect(() => {
@@ -38,7 +38,7 @@ const UserProvider = ({ children }) => {
         showMenu,
         setShowMenu,
         logout,
-        toggleScroll,
+        toggleMenu,
         setUserInfo,
         loggedIn,
         setLoggedIn,

@@ -3,7 +3,7 @@ export const experience = [
     date: '2023 - Present',
     heading: 'Software Developer - BeeSage',
 
-    text: 'Develop and sustain essential elements of BeeSage’s website to ensure top SEO performance and user engagement. Create and oversee the webshop, ROI calculator app, and blog CMS, enabling effortless content management. Dedicate efforts to refining user experience and optimizing BeeSage’s digital presence.',
+    text: 'Developed and sustained essential elements of BeeSage’s website to ensure top SEO performance and user engagement. Create and oversee the webshop, ROI calculator app, and blog CMS, enabling effortless content management. Dedicate efforts to refining user experience and optimizing BeeSage’s digital presence.',
     tools: ['Javascript', 'TypeScript', 'React', 'NextJs'],
     aria: '2023 to Present',
     headingaria: 'Software Developer',

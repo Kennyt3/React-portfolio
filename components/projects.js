@@ -1,6 +1,7 @@
 import { MdArrowOutward } from 'react-icons/md'
 import { MdArrowForward } from 'react-icons/md'
 import { projects } from './data/projects'
+import Image from 'next/image'
 const Projects = () => {
   return (
     <section
@@ -15,9 +16,9 @@ const Projects = () => {
         <ul class='group/list'>
           {projects.map((item, index) => (
             <li class='my-12' key={index}>
-              <div class='group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100'>
+              <div class='group relative flex gap-4 pb-1 transition-all gap-y-12 sm:gap-8 md:gap-4 flex-col-reverse md:flex-row-reverse  justify-between  lg:hover:!opacity-100'>
                 <div class='absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block group-hover:bg-shadow'></div>
-                <div class='z-10 sm:order-2 sm:col-span-6'>
+                <div class=''>
                   <h3 class='font-medium leading-snug'>
                     <a
                       class='inline-flex items-baseline font-medium leading-tight text-accentPrimary group-hover:text-textPrimary focus-visible:text-teal-300  group/link text-base'
@@ -41,15 +42,10 @@ const Projects = () => {
                   </h3>
                   <p class='mt-2 text-sm leading-normal'>{item.details}</p>
                 </div>
-                <img
-                  alt={item.name}
-                  loading='lazy'
+                <Image
                   width='200'
                   height='50'
-                  decoding='async'
-                  data-nimg='1'
-                  style={{ color: 'transparent' }}
-                  class='rounded border-2 border-borderPrimary transition group-hover:border-accentPrimary sm:order-1 sm:col-span-2 sm:translate-y-1'
+                  className='rounded border-2 border-borderPrimary transition group-hover:border-accentPrimary cha'
                   src={item.pic}
                 />
               </div>

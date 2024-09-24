@@ -2,9 +2,12 @@ import React from 'react'
 import { useThemeContext } from '@/context/themeContext'
 import { FiSun } from 'react-icons/fi'
 import { FiMoon } from 'react-icons/fi'
-import { BsHexagon } from 'react-icons/bs'
+
+import { FaBars } from 'react-icons/fa6'
+import { useContextValue } from '@/context/userContext'
 const Header = () => {
   const { toggleTheme, theme } = useThemeContext()
+  const { toggleMenu, showMenu } = useContextValue()
   return (
     <header className='header'>
       <nav>
@@ -61,11 +64,19 @@ const Header = () => {
           </a>
         </div>
         <button
-          class='w-10 h-10 max-xxsm:w-12 max-xxsm:h-12 flex items-center justify-center rounded-full relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#EBF2FA]'
+          class='w-10 h-10  flex items-center justify-center rounded-full relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#EBF2FA]'
           onClick={toggleTheme}
         >
           <div class='w-6 h-6 '>
             {theme === 'light' ? <FiMoon fill /> : <FiSun fill />}
+          </div>
+        </button>
+        <button
+          class='w-10 h-10  flex items-center justify-center  relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#EBF2FA]'
+          onClick={toggleMenu}
+        >
+          <div class='w-6 h-6 '>
+            <FaBars className='icon' />
           </div>
         </button>
       </nav>
