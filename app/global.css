@@ -106,6 +106,9 @@ form button {
     height: 70px;
   }
 }
+.ma {
+  height: calc(100vh - 200px);
+}
 
 .header > nav {
   display: flex;

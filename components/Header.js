@@ -72,7 +72,7 @@ const Header = () => {
           </div>
         </button>
         <button
-          class='w-10 h-10  flex items-center justify-center  relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#EBF2FA]'
+          class='md:hidden w-10 h-10  flex items-center justify-center  relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#EBF2FA]'
           onClick={toggleMenu}
         >
           <div class='w-6 h-6 '>

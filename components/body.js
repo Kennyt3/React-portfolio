@@ -86,7 +86,52 @@ const Body = () => {
     <div className='relative'>
       <Header />
       {showMenu ? (
-        <div className='mx-auto min-h-screen max-w-screen-xl px-6 pt-28 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0'></div>
+        <div className='md:hidden mx-auto min-h-screen max-w-screen-xl  pt-28 font-sans'>
+          <div className='flex flex-col ma justify-center'>
+            <ul className='mt-16'>
+              {navItem.map((item, index) => (
+                <li
+                  key={index}
+                  className='border-b-2 flex justify-center items-center py-10'
+                >
+                  <a
+                    className='group flex items-center py-3'
+                    href={`#${item.id}`}
+                    onClick={() => {
+                      setSelectedId(item.id)
+                      toggleMenu()
+                    }}
+                  >
+                    <span
+                      className={`nav-indicator  mr-4 h-px w-10 bg-accentPrimary transition-all group-hover:w-20 group-hover:bg-textPrimary group-focus-visible:w-20 group-focus-visible:bg-textPrimary motion-reduce:transition-none ${
+                        activeId === item.id || selectedId === item.id
+                          ? 'bg-textPrimary w-20'
+                          : ''
+                      }  ${
+                        item.id === 'about' && activeId === 'home'
+                          ? 'bg-textPrimary w-20'
+                          : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`nav-text text-xs font-bold uppercase tracking-widest  group-hover:text-textPrimary group-focus-visible:text-textPrimary ${
+                        activeId === item.id || selectedId === item.id
+                          ? 'text-textPrimary'
+                          : ''
+                      } ${
+                        item.id === 'about' && activeId === 'home'
+                          ? 'text-textPrimary'
+                          : ''
+                      }`}
+                    >
+                      {item.name}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       ) : (
         <>
           <div className='mx-auto min-h-screen max-w-screen-xl px-6 pt-28 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0'>
